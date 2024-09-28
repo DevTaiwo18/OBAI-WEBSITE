@@ -78,7 +78,15 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-8 lg:px-10">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex-shrink-0">
-            <img src={logo} alt="Logo" className="w-24 md:w-28 lg:w-32 h-auto transition-all duration-300" />
+            {/* Set explicit width and height for the logo */}
+            <img 
+              src={logo} 
+              alt="Logo" 
+              className="w-24 md:w-28 lg:w-32 h-auto transition-all duration-300"
+              width="120"  // Add explicit width
+              height="40"  // Add explicit height
+              loading="eager" // Ensure the logo loads eagerly
+            />
           </Link>
 
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
@@ -121,7 +129,14 @@ export default function Header() {
         >
           <div className="flex justify-between items-center mb-8">
             <Link to="/" onClick={toggleMenu} className="flex-shrink-0">
-              <img src={logo} alt="Logo" className="w-24 md:w-28 h-auto" />
+              <img 
+                src={logo} 
+                alt="Logo" 
+                className="w-24 md:w-28 h-auto"
+                width="120" // Add explicit width
+                height="40" // Add explicit height
+                loading="eager" // Ensure the logo loads eagerly
+              />
             </Link>
             <button
               onClick={toggleMenu}
