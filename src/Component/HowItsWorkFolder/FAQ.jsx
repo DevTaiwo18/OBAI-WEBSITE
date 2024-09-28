@@ -11,9 +11,9 @@ const FAQ = () => {
 
     const faqData = [
         {
-            question: 'How does OBAAI streamline the hail insurance claims process?',
+            question: 'How does OBAI streamline the hail insurance claims process?',
             answer:
-                'OBAAI automates the claim process, making it faster and easier for both adjusters and customers by utilizing AI-powered tools and a seamless user interface.',
+                'OBAI automates the claim process, making it faster and easier for both adjusters and customers by utilizing AI-powered tools and a seamless user interface.',
         },
         {
             question: 'What is RepairBot and how does it help in the claims process?',
@@ -21,9 +21,9 @@ const FAQ = () => {
                 'RepairBot is an AI-powered assistant that guides customers through the process of submitting photos, videos, and additional information for their hail damage claim. It ensures all necessary details are provided accurately.',
         },
         {
-            question: 'Can customers track the progress of their claim through OBAAI?',
+            question: 'Can customers track the progress of their claim through OBAI?',
             answer:
-                'Yes, OBAAI provides a real-time tracking system that allows customers to view the progress of their claim from submission to approval.',
+                'Yes, OBAI provides a real-time tracking system that allows customers to view the progress of their claim from submission to approval.',
         },
         {
             question: 'What types of information do adjusters need to input when creating a claim?',
@@ -31,9 +31,9 @@ const FAQ = () => {
                 'Adjusters need to input details such as incident reports, customer information, and recovery insurance information into the app’s admin interface.',
         },
         {
-            question: 'How accurate are the damage estimates provided by OBAAI?',
+            question: 'How accurate are the damage estimates provided by OBAI?',
             answer:
-                'OBAAI uses advanced algorithms to provide highly accurate damage estimates based on the uploaded photos and information provided by the customer.',
+                'OBAI uses advanced algorithms to provide highly accurate damage estimates based on the uploaded photos and information provided by the customer.',
         },
     ];
 

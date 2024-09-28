@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contactus = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-5">
       {/* Tilted text before the title */}
       <div className="text-center">
         <p className="text-sm text-[#FF5F1E] mb-2 uppercase">have questions?</p>
@@ -12,7 +12,7 @@ const Contactus = () => {
       <h1 className="text-center text-3xl font-extrabold text-[#171717] mb-8">Contact Us</h1>
       
       {/* Google Calendar Scheduling Embed Section */}
-      <div className="w-full flex justify-center items-center" style={{ padding: '20px' }}>
+      <div className="w-full flex justify-center items-center ">
         {/* Embed Google Calendar iframe */}
         <iframe
           src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0fdyo8OE4MPhwQRmYl1z5e7EYHiDLzMS9mnBxQtvGwmoqTUWOAkc980djHTZNnd4GXWC-FNBmr?gv=true"

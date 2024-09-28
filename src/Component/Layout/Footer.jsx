@@ -14,7 +14,7 @@ function Footer() {
         {/* Logo */}
         <div className="flex-shrink-0 flex justify-center mb-4 lg:mb-0">
           <Link to="/"> {/* Use Link to navigate to the homepage */}
-            <img src={logo} alt="Logo" className="w-40 md:w-32 lg:w-24 cursor-pointer" />
+            <img src={logo} alt="Logo" className="w-24 cursor-pointer" />
           </Link>
         </div>
 
@@ -34,7 +34,7 @@ function Footer() {
 
       {/* Second Line: Social Icons */}
       <div className="flex justify-center space-x-6 mt-8 lg:mt-12">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/company/obai-us/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
           <img src={linkedln} alt="LinkedIn" className="w-8 h-8 hover:opacity-75 transition-opacity duration-300" />
         </a>
         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">

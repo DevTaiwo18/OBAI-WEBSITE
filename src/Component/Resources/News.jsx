@@ -12,16 +12,16 @@ const News = () => {
   }, []);
 
   const newsData = [
-    { title: 'OBAAI Launches New AI-Powered RepairBot' },
+    { title: 'OBAI Launches New AI-Powered RepairBot' },
     { title: 'How to Speed Up Your Insurance Claims with Our App' },
     { title: 'Streamlining the Claims Process for a Better User Experience' },
-    { title: 'New Features in OBAAI to Help Adjusters' },
+    { title: 'New Features in OBAI to Help Adjusters' },
     { title: 'Tips for Reducing Insurance Processing Time' },
     { title: 'Understanding AI in the Insurance Industry' },
-    { title: 'OBAAI Expands Into New Markets Across the U.S.' },
+    { title: 'OBAI Expands Into New Markets Across the U.S.' },
     { title: 'The Future of Insurance Technology in 2024' },
-    { title: 'Case Study: How OBAAI Improved Claim Accuracy' },
-    { title: 'OBAAI Recognized as Top Innovator in InsurTech' },
+    { title: 'Case Study: How OBAI Improved Claim Accuracy' },
+    { title: 'OBAI Recognized as Top Innovator in InsurTech' },
     { title: 'What You Need to Know About Digital Insurance' },
     { title: 'Enhancing Customer Satisfaction Through Technology' },
   ];

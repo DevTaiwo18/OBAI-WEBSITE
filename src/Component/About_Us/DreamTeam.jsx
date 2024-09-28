@@ -5,15 +5,15 @@ import Justin from '../../assets/justin.webp';
 import Todd from '../../assets/todd.webp';
 import Mo from '../../assets/Mo_Daniel.png';
 import Shane from '../../assets/shane.webp';
-import Ed from '../../assets/Ed Baafi headshot.png';
+import Adeyemi from '../../assets/optimized/adeyemi.png';
 
 const teamMembers = [
   { name: "Kameron Seabrook", role: "founder & CEO", image: Kameron },
   { name: "Justin Fields", role: "Co-Founder & Appraiser", image: Justin },
   { name: "Todd Hostetler", role: "Head of UX & UI", image: Todd },
   { name: "Mo Daniel", role: "Jr Front-End Developer", image: Mo },
-  { name: "Shane York", role: "Head of Appraisals", image: Shane },
-  { name: "Ed Baafi", role: "CTO", image: Ed },
+  { name: "Shane York", role: "Head of Customer Success", image: Shane },
+  { name: "Adeyemi Taiwo", role: "Jr Software Engineer", image: Adeyemi },
 ];
 
 const TeamMemberCard = ({ name, role, image }) => (

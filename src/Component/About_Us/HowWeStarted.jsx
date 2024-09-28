@@ -11,10 +11,10 @@ const HowWeStarted = () => {
         <div className="how-we-started md:w-1/2 mb-4 md:mb-0">
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#171717] mb-4">How we started</h1> {/* Updated to brand black */}
           <p className="text-[#606060]">
-            OBAAI began as an open garage concept during the Flyer Pitch Competition, founded by Kameron Seabrook.
+            OBAI began as an open garage concept during the Flyer Pitch Competition, founded by Kameron Seabrook.
             Initially focused on automotive care, the company evolved, adapting to market needs.
             <br /><br />
-            Today, OBAAI stands at the forefront of technological innovation, specializing in streamlining the insurance 
+            Today, OBAI stands at the forefront of technological innovation, specializing in streamlining the insurance 
             claims process, making it faster and more efficient for everyone.
           </p>
         </div>
