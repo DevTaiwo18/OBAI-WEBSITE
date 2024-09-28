@@ -14,7 +14,7 @@ function Footer() {
         {/* Logo */}
         <div className="flex-shrink-0 flex justify-center mb-4 lg:mb-0">
           <Link to="/"> {/* Use Link to navigate to the homepage */}
-            <img src={logo} alt="Logo" className="w-40 md:w-32 lg:w-28 cursor-pointer" />
+            <img src={logo} alt="Logo" className="w-40 md:w-32 lg:w-24 cursor-pointer" />
           </Link>
         </div>
 
