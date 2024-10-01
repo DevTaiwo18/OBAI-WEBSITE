@@ -69,8 +69,8 @@ export default function Header() {
     { name: 'About', path: '/about' },
     { name: 'How It Works', path: '/how-we-started' },
     { name: 'Resources', path: '/resources' },
-    { name: 'RepairBot', path: '/repair-bot' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Login', path: '#' },
   ];
 
   return (
@@ -79,9 +79,9 @@ export default function Header() {
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex-shrink-0">
             {/* Set explicit width and height for the logo */}
-            <img 
-              src={logo} 
-              alt="Logo" 
+            <img
+              src={logo}
+              alt="Logo"
               className="w-24 md:w-28 lg:w-32 h-auto transition-all duration-300"
               width="120"  // Add explicit width
               height="40"  // Add explicit height
@@ -99,8 +99,8 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Link 
-              to="/demo" 
+            <Link
+              to="/demo"
               className="bg-gradient-to-b from-[#FF5F1E] to-[#FF471E] text-[#FFFDF9] font-bold px-4 py-2 rounded-lg-rounded hover:scale-105 transition-all duration-300 shadow-custom"
             >
               Demo
@@ -129,9 +129,9 @@ export default function Header() {
         >
           <div className="flex justify-between items-center mb-8">
             <Link to="/" onClick={toggleMenu} className="flex-shrink-0">
-              <img 
-                src={logo} 
-                alt="Logo" 
+              <img
+                src={logo}
+                alt="Logo"
                 className="w-24 md:w-28 h-auto"
                 width="120" // Add explicit width
                 height="40" // Add explicit height
@@ -158,8 +158,8 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Link 
-              to="/demo" 
+            <Link
+              to="/demo"
               onClick={toggleMenu}
               className="bg-gradient-to-b from-[#FF5F1E] to-[#FF471E] text-[#FFFDF9] font-bold px-4 py-2 rounded-lg-rounded hover:scale-105 transition-all duration-300 text-center mt-4 shadow-custom"
             >

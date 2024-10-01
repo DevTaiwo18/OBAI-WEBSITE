@@ -9,7 +9,6 @@ import './index.css';
 const Home = lazy(() => import('./Component/Home_Page/Home'));
 const About = lazy(() => import('./Component/About_Us/About'));
 const Resources = lazy(() => import('./Component/Resources/Resources'));
-const Repairbot = lazy(() => import('./Component/RepairBot/Repairbot'));
 const Contact = lazy(() => import('./Component/Contact_Us/Contact'));
 const Demo = lazy(() => import('./Component/Demo/Demo'));
 const Howitswork = lazy(() => import('./Component/HowItsWorkFolder/Howitswork'));
@@ -62,7 +61,6 @@ function App() {
                 <Route path="/about" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><About /></Suspense></AnimatedPage>} />
                 <Route path="/how-we-started" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Howitswork /></Suspense></AnimatedPage>} />
                 <Route path="/resources" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Resources /></Suspense></AnimatedPage>} />
-                <Route path="/repair-bot" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Repairbot /></Suspense></AnimatedPage>} />
                 <Route path="/contact" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Contact /></Suspense></AnimatedPage>} />
                 <Route path="/demo" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Demo /></Suspense></AnimatedPage>} />
               </Routes>

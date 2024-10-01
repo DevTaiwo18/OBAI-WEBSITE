@@ -7,7 +7,7 @@ const HaveCar = () => {
   const navigate = useNavigate(); // To navigate programmatically
 
   const handleChatClick = () => {
-    navigate('/repair-bot'); // Navigate to the /repair-bot page
+    navigate('#'); // Navigate to the /repair-bot page
   };
 
   return (
