@@ -99,12 +99,12 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Link
+            {/* <Link
               to="/demo"
               className="bg-gradient-to-b from-[#FF5F1E] to-[#FF471E] text-[#FFFDF9] font-bold px-4 py-2 rounded-lg-rounded hover:scale-105 transition-all duration-300 shadow-custom"
             >
               Demo
-            </Link>
+            </Link> */}
           </div>
 
           <button

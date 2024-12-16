@@ -1,12 +1,36 @@
-import React from 'react';
-import home_frame from '../../assets/Frame 11.png';
-import mobile_frame from '../../assets/Home Hero.png';
-import StatRow from './StatRow';
+import home_frame from "../../assets/Frame 11.png";
+import mobile_frame from "../../assets/Home Hero.png";
+import StatRow from "./StatRow";
+import { useState } from "react";
 
 const HeroSection = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+  const handlePlayClick = () => {
+    setIsVideoOpen(true);
+  };
   return (
     <div className="bg-[#FFFDF9] px-4 md:px-6 lg:px-20">
       {/* For small screens: Mobile frame at the top */}
+      {/* Video Modal (Overlay at the top) */}
+      {isVideoOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-start justify-center z-50" style={{ paddingTop: '3rem' }}>
+          <div className="bg-white p-4 rounded-lg max-w-xl w-full relative z-10">
+            <video
+              src="src/assets/Celina.mov"
+              autoPlay
+              controls
+              className="w-full"
+            ></video>
+            <button
+              className="mt-4 px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
+              onClick={() => setIsVideoOpen(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
       <div className="md:hidden flex justify-center">
         <img src={mobile_frame} alt="Mobile frame" className="w-full h-auto" />
       </div>
@@ -17,12 +41,13 @@ const HeroSection = () => {
           <div className="space-y-4">
             {/* Heading with updated font and color */}
             <h1 className="text-[28px] md:text-[48px] font-extrabold leading-[40px] md:leading-[72px] text-[#171717] font-[Red Hat Display] text-left">
-              Streamline Your Claims Process
+              Experience flexibility, for any type of insurance claim
             </h1>
 
             {/* Paragraph with updated color */}
             <p className="text-[15px] md:text-[15px] leading-[24px] text-[#171717] text-left">
-              Experience the future of insurance claims with our innovative technology. Fast, accurate, and hassle-free.
+              Experience the future of insurance claims with our innovative
+              technology. Fast, accurate, and hassle-free.
             </p>
           </div>
 
@@ -36,23 +61,24 @@ const HeroSection = () => {
                             22px 105px 43px 0px rgba(23, 23, 23, 0.01),
                             13px 59px 36px 0px rgba(23, 23, 23, 0.03),
                             6px 26px 27px 0px rgba(23, 23, 23, 0.04),
-                            1px 7px 15px 0px rgba(23, 23, 23, 0.05)`, 
+                            1px 7px 15px 0px rgba(23, 23, 23, 0.05)`,
               }}
             >
-              Streamline
+              Get Started
             </a>
 
             {/* Play button styled with shadow and cursor pointer */}
             <div
               className="w-full sm:w-auto flex items-center justify-center border-[2px] border-[#171717] rounded-[30px] p-[2px] hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer"
               style={{
-                height: '50px',
+                height: "50px",
                 boxShadow: `35px 164px 47px 0px rgba(23, 23, 23, 0.00),
                             22px 105px 43px 0px rgba(23, 23, 23, 0.01),
                             13px 59px 36px 0px rgba(23, 23, 23, 0.03),
                             6px 26px 27px 0px rgba(23, 23, 23, 0.04),
                             1px 7px 15px 0px rgba(23, 23, 23, 0.05)`, // Updated shadow for play button
               }}
+              onClick={handlePlayClick}
             >
               <div className="w-full sm:w-[56px] h-full flex items-center justify-center bg-[#FFFDF9] rounded-full">
                 <svg
@@ -70,7 +96,11 @@ const HeroSection = () => {
 
         {/* Image section */}
         <div className="hidden md:flex flex-1 justify-center mb-0">
-          <img src={home_frame} alt="Home frame" className="w-full h-auto m-0" />
+          <img
+            src={home_frame}
+            alt="Home frame"
+            className="w-full h-auto m-0"
+          />
         </div>
       </div>
 

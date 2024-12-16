@@ -20,6 +20,20 @@ module.exports = {
       borderRadius: {
         'lg-rounded': '30px',  // Custom large rounded corners
       },
+      keyframes: {
+        scrollDown: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
+        scrollUp: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
+      },
+      animation: {
+        'scroll-down': 'scrollDown 10s linear infinite',
+        'scroll-up': 'scrollUp 10s linear infinite',
+      },
     },
   },
   plugins: [],

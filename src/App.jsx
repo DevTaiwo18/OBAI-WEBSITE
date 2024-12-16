@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ClipLoader } from 'react-spinners'; // Import the spinner
@@ -10,7 +10,7 @@ const Home = lazy(() => import('./Component/Home_Page/Home'));
 const About = lazy(() => import('./Component/About_Us/About'));
 const Resources = lazy(() => import('./Component/Resources/Resources'));
 const Contact = lazy(() => import('./Component/Contact_Us/Contact'));
-const Demo = lazy(() => import('./Component/Demo/Demo'));
+// const Demo = lazy(() => import('./Component/Demo/Demo'));
 const Howitswork = lazy(() => import('./Component/HowItsWorkFolder/Howitswork'));
 
 const pageVariants = {
@@ -62,7 +62,7 @@ function App() {
                 <Route path="/how-we-started" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Howitswork /></Suspense></AnimatedPage>} />
                 <Route path="/resources" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Resources /></Suspense></AnimatedPage>} />
                 <Route path="/contact" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Contact /></Suspense></AnimatedPage>} />
-                <Route path="/demo" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Demo /></Suspense></AnimatedPage>} />
+                {/* <Route path="/demo" element={<AnimatedPage><Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Demo /></Suspense></AnimatedPage>} /> */}
               </Routes>
             </AnimatePresence>
           </main>
