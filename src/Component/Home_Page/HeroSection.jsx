@@ -14,14 +14,19 @@ const HeroSection = () => {
       {/* For small screens: Mobile frame at the top */}
       {/* Video Modal (Overlay at the top) */}
       {isVideoOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-start justify-center z-50" style={{ paddingTop: '3rem' }}>
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-start justify-center z-50"
+          style={{ paddingTop: "3rem" }}
+        >
           <div className="bg-white p-4 rounded-lg max-w-xl w-full relative z-10">
-            <video
-              src="src/assets/Celina.mov"
-              autoPlay
-              controls
-              className="w-full"
-            ></video>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/L5XXyGuI7Do"
+              title="Obai Commercial Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
             <button
               className="mt-4 px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
               onClick={() => setIsVideoOpen(false)}
