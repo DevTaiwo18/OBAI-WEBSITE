@@ -99,12 +99,12 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            {/* <Link
-              to="/demo"
+            <Link
+              to="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0fdyo8OE4MPhwQRmYl1z5e7EYHiDLzMS9mnBxQtvGwmoqTUWOAkc980djHTZNnd4GXWC-FNBmr?gv=true"
               className="bg-gradient-to-b from-[#FF5F1E] to-[#FF471E] text-[#FFFDF9] font-bold px-4 py-2 rounded-lg-rounded hover:scale-105 transition-all duration-300 shadow-custom"
             >
               Demo
-            </Link> */}
+            </Link>
           </div>
 
           <button

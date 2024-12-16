@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, useInView } from 'framer-motion';
 import SomeReading from '../GeneralComponent/SomeReading';
-import HaveCar from '../GeneralComponent/HaveCar';
+// import HaveCar from '../GeneralComponent/HaveCar';
 import GetInTouch from '../GeneralComponent/GetInTouch';
 import ReHeading from './ReHeading';
 import NewsletterSubscribe from './NewsletterSubscribe';
@@ -43,9 +43,9 @@ function Resources() {
         <SomeReading />
       </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <HaveCar />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       <AnimatedSection>
         <GetInTouch />

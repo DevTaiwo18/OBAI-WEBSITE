@@ -38,9 +38,9 @@ function Contact() {
         <ContactInfo />
       </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <HaveCar />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       <AnimatedSection>
         <SomeReading />

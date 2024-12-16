@@ -49,9 +49,9 @@ function Howitswork() {
                 <FAQ />
             </AnimatedSection>
 
-            <AnimatedSection>
+            {/* <AnimatedSection>
                 <HaveCar />
-            </AnimatedSection>
+            </AnimatedSection> */}
 
             <AnimatedSection>
                 <SomeReading />

@@ -49,9 +49,9 @@ function Home() {
         <PeopleSay />
       </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <HaveCar />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       <AnimatedSection>
         <SomeReading />

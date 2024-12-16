@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, useInView } from 'framer-motion';
 import PeopleSay from '../GeneralComponent/PeopleSay';
-import HaveCar from '../GeneralComponent/HaveCar';
+// import HaveCar from '../GeneralComponent/HaveCar';
 import GetInTouch from '../GeneralComponent/GetInTouch';
 import WhoWeAre from './WhoWeAre';
 import HowWeStarted from './HowWeStarted';
@@ -48,9 +48,9 @@ function About() {
         <PeopleSay />
       </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <HaveCar />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       <AnimatedSection>
         <SomeReading />

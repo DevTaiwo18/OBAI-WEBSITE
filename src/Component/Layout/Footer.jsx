@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom if you're using react-router for navigation
 import logo from '../../assets/logo.svg';
 import youtube from '../../assets/YouTube.png';
@@ -25,9 +24,8 @@ function Footer() {
             <li><Link to="/about" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">About</Link></li>
             <li><Link to="/how-we-started" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">How It Works</Link></li>
             <li><Link to="/resources" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Resources</Link></li>
-            <li><Link to="/repair-bot" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">RepairBot</Link></li>
             <li><Link to="/contact" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Contact</Link></li>
-            <li><Link to="/demo" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Demo</Link></li>
+            <li><Link to="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0fdyo8OE4MPhwQRmYl1z5e7EYHiDLzMS9mnBxQtvGwmoqTUWOAkc980djHTZNnd4GXWC-FNBmr?gv=true" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Demo</Link></li>
           </ul>
         </div>
       </div>
