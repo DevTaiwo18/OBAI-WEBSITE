@@ -2,27 +2,36 @@ import React from 'react';
 
 const Contactus = () => {
   return (
-    <div className="container mx-auto px-4 py-8 mt-5">
+    <div className="w-full px-4 md:px-16 py-8 mt-5">
       {/* Tilted text before the title */}
       <div className="text-center">
         <p className="text-sm text-[#FF5F1E] mb-2 uppercase">have questions?</p>
       </div>
-      
+
       {/* Heading */}
       <h1 className="text-center text-3xl font-extrabold text-[#171717] mb-8">Contact Us</h1>
-      
-      {/* Google Calendar Scheduling Embed Section */}
-      <div className="w-full flex justify-center items-center ">
-        {/* Embed Google Calendar iframe */}
-        <iframe
-          src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0fdyo8OE4MPhwQRmYl1z5e7EYHiDLzMS9mnBxQtvGwmoqTUWOAkc980djHTZNnd4GXWC-FNBmr?gv=true"
-          title="Google Calendar Scheduling"
-          width="100%"
-          height="600"
-          frameBorder="0"
-          style={{ borderRadius: '12px' }}
-          allowFullScreen
-        />
+
+      {/* Two Calendly Embeds Side-by-Side */}
+      <div className="flex flex-col md:flex-row justify-center gap-6">
+        {/* Kameron's Calendly Embed */}
+        <div className="w-full md:w-1/2 h-[80vh]">
+          <iframe
+            src="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12"
+            title="Kameron's Calendly Scheduling"
+            className="w-full h-full border-0 rounded-lg"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        {/* Justin's Calendly Embed */}
+        <div className="w-full md:w-1/2 h-[80vh]">
+          <iframe
+            src="https://calendly.com/justin-obai/30min?back=1&month=2024-12"
+            title="Justin's Calendly Scheduling"
+            className="w-full h-full border-0 rounded-lg"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );

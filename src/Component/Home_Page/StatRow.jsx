@@ -28,10 +28,10 @@ const StatRow = () => {
         {/* Third Stat */}
         <div className="py-2">
           <h2 className="text-[32px] font-extrabold text-[#171717]">
-            90<span className="text-[#171717]">%</span><span className="text-[#FF5F1E] text-[32px]"> +</span>
+            50<span className="text-[#171717]">%</span><span className="text-[#FF5F1E] text-[32px]"> +</span>
           </h2>
           <p className="text-[#171717] font-semibold text-[12px] md:text-sm mt-2">
-            hail damage repair estimate accuracy
+            claim cost reduction
           </p>
         </div>
       </div>
