@@ -1,5 +1,5 @@
 import React from "react";
-import home_frame from "../../assets/image + banner.png";
+import home_frame from "../../assets/image_banner.png";
 import mobile_frame from "../../assets/Home Hero.png";
 import StatRow from "./StatRow";
 

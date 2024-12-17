@@ -70,7 +70,7 @@ export default function Header() {
     { name: 'How It Works', path: '/how-we-started' },
     { name: 'Resources', path: '/resources' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Login', path: '#' },
+    // { name: 'Login', path: '#' },
   ];
 
   return (
