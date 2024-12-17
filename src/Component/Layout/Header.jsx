@@ -100,7 +100,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              to="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0fdyo8OE4MPhwQRmYl1z5e7EYHiDLzMS9mnBxQtvGwmoqTUWOAkc980djHTZNnd4GXWC-FNBmr?gv=true"
+              to="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12"
               className="bg-gradient-to-b from-[#FF5F1E] to-[#FF471E] text-[#FFFDF9] font-bold px-4 py-2 rounded-lg-rounded hover:scale-105 transition-all duration-300 shadow-custom"
             >
               Demo
@@ -159,7 +159,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              to="/demo"
+              to="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12"
               onClick={toggleMenu}
               className="bg-gradient-to-b from-[#FF5F1E] to-[#FF471E] text-[#FFFDF9] font-bold px-4 py-2 rounded-lg-rounded hover:scale-105 transition-all duration-300 text-center mt-4 shadow-custom"
             >

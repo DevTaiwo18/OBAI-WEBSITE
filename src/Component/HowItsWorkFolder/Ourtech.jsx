@@ -18,8 +18,8 @@ const OurTech = () => {
             {/* YouTube Embedded Video */}
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/L5XXyGuI7Do"
-              title="Obai Commercial Video"
+              src="https://www.youtube.com/embed/WZQfj4IR7LE"
+              title="Our Tech Video"
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

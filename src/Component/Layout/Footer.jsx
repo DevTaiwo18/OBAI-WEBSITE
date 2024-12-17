@@ -35,7 +35,7 @@ function Footer() {
         <a href="https://www.linkedin.com/company/obai-us/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
           <img src={linkedln} alt="LinkedIn" className="w-8 h-8 hover:opacity-75 transition-opacity duration-300" />
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@Obai-claims" target="_blank" rel="noopener noreferrer">
           <img src={youtube} alt="YouTube" className="w-8 h-8 hover:opacity-75 transition-opacity duration-300" />
         </a>
       </div>

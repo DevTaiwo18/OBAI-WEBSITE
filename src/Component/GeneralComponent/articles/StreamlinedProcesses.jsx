@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 
-const InnovativeSolutions = () => {
+const StreamlinedProcesses = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -9,90 +9,115 @@ const InnovativeSolutions = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <article className="flex flex-col p-6 max-w-5xl">
-        <h1 className="text-2xl font-extrabold mb-6 text-brand-primary">Steamlined Process</h1>
-        
-        <ul className="flex flex-col gap-4">
-          <li>
-            <button onClick={() => scrollToSection('emerging-tech')} className="text-gray-700 hover:text-[#FF5F1E] transition-colors text-left">
-              Emerging Technologies
-            </button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection('digital-transformation')} className="text-gray-700 hover:text-[#FF5F1E] transition-colors text-left">
-              Digital Transformation
-            </button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection('sustainability')} className="text-brand-dark hover:text-brand-primary active:text-brand-tertiary font-medium transition-colors text-left">
-              Sustainability
-            </button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection('future-work')} className="text-gray-700 hover:text-[#FF5F1E] transition-colors text-left">
-              Future of Work
-            </button>
-          </li>
-        </ul>
-        <br/>
-        <p className="text-lg leading-relaxed mb-8">
-          In today&apos;s rapidly evolving business landscape, organizations must embrace innovation to stay competitive and meet changing customer demands.
+    <div className="w-full px-4 sm:px-6 lg:px-20 py-12 bg-gray-50">
+      {/* Title Section */}
+      <div className="text-left ps-3 md:ps-0 sm:text-left md:text-center mb-12">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#171717] mb-4">
+          Streamlined Processes
+        </h1>
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mx-auto max-w-3xl">
+          Explore the key innovations driving sustainable growth, improving efficiency, and shaping the future of industries.
         </p>
+      </div>
 
-        {/** Sections */}
-        <section id="emerging-tech" className="mb-12">
-          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Emerging Technologies</h2>
-          <ul className="list-disc ml-6 text-lg leading-relaxed">
-            <li><strong>Artificial Intelligence & Machine Learning:</strong> Advanced algorithms...</li>
-            <li><strong>Internet of Things (IoT):</strong> Connected devices...</li>
-            <li><strong>Edge Computing:</strong> Processing data closer...</li>
-            <li><strong>Quantum Computing:</strong> Next-generation computing...</li>
-          </ul>
+      {/* Navigation Buttons */}
+      <ul className="flex ps-3 md:ps-0  flex-wrap justify-start md:justify-center gap-4 md:gap-8 mb-10">
+        <li>
+          <button
+            onClick={() => scrollToSection('emerging-tech')}
+            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
+          >
+            Emerging Technologies
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection('digital-transformation')}
+            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
+          >
+            Digital Transformation
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection('sustainability')}
+            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
+          >
+            Sustainability
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection('future-work')}
+            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
+          >
+            Future of Work
+          </button>
+        </li>
+      </ul>
+
+      {/* Content Sections */}
+      <div className="max-w-6xl mx-auto space-y-16 text-gray-700 text-sm sm:text-base leading-relaxed">
+        {/* Section 1 */}
+        <section id="emerging-tech" className="text-left px-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
+            Emerging Technologies
+          </h2>
+          <p>
+            From Artificial Intelligence to IoT, emerging technologies empower organizations to achieve unprecedented innovation and agility.
+          </p>
         </section>
 
-        <section id="digital-transformation" className="mb-12">
-          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Digital Transformation</h2>
-          <ul className="list-disc ml-6 text-lg leading-relaxed">
-            <li><strong>Cloud-Native Architecture:</strong> Modern applications...</li>
-            <li><strong>Data-Driven Decision Making:</strong> Advanced analytics...</li>
-            <li><strong>Customer Experience:</strong> Digital channels...</li>
-            <li><strong>Process Automation:</strong> Robotic process automation...</li>
-          </ul>
+        {/* Section 2 */}
+        <section id="digital-transformation" className="text-left px-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
+            Digital Transformation
+          </h2>
+          <p>
+            Leveraging cloud-native architectures and process automation, businesses transform customer experiences and accelerate growth.
+          </p>
         </section>
 
-        <section id="sustainability" className="mb-12">
-          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Sustainability</h2>
-          <ul className="list-disc ml-6 text-lg leading-relaxed">
-            <li><strong>Green Technology:</strong> Clean energy solutions...</li>
-            <li><strong>Circular Economy:</strong> Innovative business models...</li>
-            <li><strong>Carbon Management:</strong> Advanced tools...</li>
-            <li><strong>Sustainable Supply Chains:</strong> Organizations are reimagining...</li>
-          </ul>
+        {/* Section 3 */}
+        <section id="sustainability" className="text-left px-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
+            Sustainability
+          </h2>
+          <p>
+            Green technology, circular economies, and sustainable practices help businesses reduce environmental impact and drive long-term success.
+          </p>
         </section>
 
-        <section id="future-work" className="mb-12">
-          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Future of Work</h2>
-          <ul className="list-disc ml-6 text-lg leading-relaxed">
-            <li><strong>Hybrid Workplaces:</strong> Advanced collaboration tools...</li>
-            <li><strong>AI-Powered Productivity:</strong> Intelligent tools...</li>
-            <li><strong>Skills Revolution:</strong> Continuous learning...</li>
-            <li><strong>Employee Experience:</strong> Digital workplace solutions...</li>
-          </ul>
+        {/* Section 4 */}
+        <section id="future-work" className="text-left px-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
+            Future of Work
+          </h2>
+          <p>
+            Future workplaces prioritize collaboration, flexibility, and continuous learning, enhancing productivity with intelligent tools.
+          </p>
         </section>
+      </div>
 
-        <div className="mt-12 pt-6 border-t border-gray-200">
-          <a href="/articles/customer-centric-approach" className="group flex items-center gap-6 p-4 rounded-lg hover:bg-gray-50 transition-colors">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-1">Customer Centric Approach</h3>
-              <p className="text-gray-500">Learn about building and implementing effective digital transformation strategies.</p>
-            </div>
-            <ArrowRight className="w-6 h-6 text-[#FF5F1E] transform group-hover:translate-x-2 transition-transform" />
-          </a>
-        </div>
-      </article>
+      {/* Call to Action */}
+      <div className="mt-16 pt-8 border-t border-gray-200">
+        <a
+          href="/articles/customer-centric-approach"
+          className="group flex flex-col md:flex-row items-center justify-between gap-6 p-6 rounded-lg bg-[#FFFDF9] hover:bg-gray-100 transition-colors shadow-md"
+        >
+          <div className="text-left">
+            <h3 className="text-lg sm:text-xl font-semibold text-[#171717] mb-1">
+              Customer-Centric Approach
+            </h3>
+            <p className="text-gray-600">
+              Discover strategies to prioritize customer needs and deliver exceptional digital experiences.
+            </p>
+          </div>
+          <ArrowRight className="w-5 sm:w-6 h-5 sm:h-6 text-[#FF5F1E] group-hover:translate-x-2 transition-transform" />
+        </a>
+      </div>
     </div>
   );
 };
 
-export default InnovativeSolutions;
+export default StreamlinedProcesses;
