@@ -1,14 +1,14 @@
-import BG from "./../../assets/Rectangle 38.png";
 import { Link } from "react-router-dom"; // Import Link
 
 const SomeReading = () => {
   const articles = [
     {
-      title: "CapacitorJS: A Leaner Hail Claims Process",
+      title: "Simple vs. Advanced Solutions – What Do You Actually Need?",
       link: "/articles/innovative-solutions",
     },
     {
-      title: "CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process",
+      title:
+        "CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process",
       link: "/articles/streamlined-processes",
     },
     {
@@ -41,14 +41,28 @@ const SomeReading = () => {
             }}
           >
             <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${BG})` }}
+              className="absolute inset-0 bg-gradient-to-r"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(58, 58, 58, 0.9), transparent)",
+                width: "85%",
+              }}
             ></div>
             <div
-              className="absolute inset-0 bg-gradient-to-r from-brand-dark to-transparent"
-              style={{ width: "65%" }}
+              className="absolute inset-0 bg-gradient-to-r"
+              style={{
+                background: `linear-gradient(to right, rgba(23, 23, 23, 0.9), rgba(58, 58, 58, 0.9)), transparent)`,
+                width: "95%",
+              }}
             ></div>
-            <div className="relative h-full flex items-center">
+            <div
+              className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-transparent"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(58, 58, 58, 0.9), transparent)",
+                width: "85%",
+              }}
+            >
               <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
                 {article.title}
               </h3>

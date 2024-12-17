@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import Simple from "../../../assets/articles/Simple.png";
 
 const InnovativeSolutions = () => {
   const scrollToSection = (id) => {
@@ -13,10 +14,10 @@ const InnovativeSolutions = () => {
       {/* Title Section */}
       <div className="text-left ps-3 md:ps-0 sm:text-left md:text-center mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#171717]">
-          CapacitorJS: A Leaner Hail Claims Process
+          Simple vs. Advanced Solutions – What Do You Actually Need?
         </h1>
         <p className="text-gray-600 mt-3 max-w-3xl mx-auto sm:mx-0 md:mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
-          Discover why Obai chose CapacitorJS to build a lean web app for faster, simpler hail claims processing. Learn how simplicity improves efficiency for appraisers and insurers.
+          Discover why simple solutions outperform complex systems in speed, ease, and cost-efficiency. Streamline your process today!
         </p>
       </div>
 
@@ -24,61 +25,94 @@ const InnovativeSolutions = () => {
       <ul className="flex flex-wrap justify-start ps-3 md:ps-0 md:justify-center gap-4 md:gap-8 mb-10">
         <li>
           <button
-            onClick={() => scrollToSection('native-app-drawbacks')}
+            onClick={() => scrollToSection('keeping-it-simple')}
             className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Native App Drawbacks
+            The Case for Keeping It Simple
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection('capacitorjs-benefits')}
+            onClick={() => scrollToSection('why-simplicity')}
             className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            CapacitorJS Benefits
+            Why Simplicity Wins
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection('simplicity-efficiency')}
+            onClick={() => scrollToSection('whats-right')}
             className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Simplicity = Efficiency
+            What&apos;s Right for You?
           </button>
         </li>
       </ul>
 
-      {/* Content Sections */}
-      <div className="max-w-6xl mx-auto space-y-16 text-gray-700 text-sm sm:text-base leading-relaxed">
-        {/* Section 1 */}
-        <section id="native-app-drawbacks" className="text-left px-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Why Native Apps Aren&apos;t Always the Best Option
-          </h2>
-          <p>
-            Native apps can be overcomplicated, requiring separate codebases for iOS and Android, frequent updates, and constant maintenance. This complexity can slow down workflows in industries like automotive insurance, where simplicity is key.
-          </p>
-        </section>
+      {/* Content Wrapper */}
+      <div className="max-w-6xl mx-auto">
+        {/* Image Section - Now matches text width */}
+        <div className="px-4 mb-8">
+          <img
+            src={Simple}
+            alt="If your users won't use it, then why add it"
+            className="w-full h-auto"
+          />
+        </div>
 
-        {/* Section 2 */}
-        <section id="capacitorjs-benefits" className="text-left px-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Our Solution: A Lean Web App Built with CapacitorJS
-          </h2>
-          <p>
-            CapacitorJS allows us to create a web app that offers a native-like experience while being easier to maintain. With a single codebase, development is faster and updates are seamless. Appraisers benefit from features like AR annotations and AI-powered photo validation, enhancing their workflow efficiency.
-          </p>
-        </section>
+        {/* Content Sections */}
+        <div className="space-y-16 text-gray-700 text-sm sm:text-base leading-relaxed">
+          {/* Introduction */}
+          <section className="text-left px-4">
+            <p>
+              In today&apos;s fast-moving tech world, businesses often face a choice: go for the most advanced solutions or stick to something simpler. But here&apos;s the reality—just because something is more complex doesn&apos;t mean it&apos;s better. In fact, when it comes to automotive insurance, especially handling hail claims, simple solutions can often be the smarter choice.
+            </p>
+            <p className="mt-4">
+              At Obai, we&apos;re big believers in simplicity. Our hail claims app isn&apos;t overloaded with unnecessary features—it&apos;s designed to do one thing really well: make the claims process easier for appraisers and insurance companies. Let&apos;s dive into why simple solutions, like ours, are often the best fit.
+            </p>
+          </section>
 
-        {/* Section 3 */}
-        <section id="simplicity-efficiency" className="text-left px-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Simplicity Equals Efficiency
-          </h2>
-          <p>
-            By choosing simplicity, we ensure our users have the tools they need without unnecessary bloat. With automatic updates, appraisers always have access to the most current features, allowing them to process claims quickly and efficiently.
-          </p>
-        </section>
+          {/* Section 1 */}
+          <section id="keeping-it-simple" className="text-left px-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
+              The Case for Keeping It Simple
+            </h2>
+            <p>
+              Advanced tech can be tempting. Many apps and platforms are packed with cutting-edge features like AI, predictive analytics, or even augmented reality. But while these sound impressive, they often come with drawbacks—complexity, long onboarding times, and a steeper learning curve.
+            </p>
+            <p className="mt-4">
+              Imagine you&apos;re an appraiser handling a hail damage claim. Do you really need a dozen extra features that complicate your workflow? More likely, you need a solution that lets you get the job done fast and accurately. That&apos;s where simple solutions shine.
+            </p>
+          </section>
+
+          {/* Section 2 */}
+          <section id="why-simplicity" className="text-left px-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
+              Why Simplicity Wins
+            </h2>
+            <p>
+              With Obai&apos;s hail claims app, we&apos;ve zeroed in on what really matters: speed, accuracy, and ease of use. Our app helps you submit claims quickly without wading through features you don&apos;t need. Here&apos;s why simple solutions work better:
+            </p>
+            <ul className="list-disc pl-6 mt-4 space-y-2">
+              <li><span className="font-semibold">Ease of Use:</span> It&apos;s straightforward. No endless training required—just log in and start working.</li>
+              <li><span className="font-semibold">Faster Results:</span> Simplicity means efficiency. You can process hail damage claims faster.</li>
+              <li><span className="font-semibold">Cost Savings:</span> No over-engineered features means fewer costs, both in time and resources.</li>
+            </ul>
+          </section>
+
+          {/* Section 3 */}
+          <section id="whats-right" className="text-left px-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
+              What&apos;s Right for You?
+            </h2>
+            <p>
+              When it comes to hail claims, do you need the most advanced solution out there? Probably not. What you really need is something that works—fast, accurately, and with minimal hassle. That&apos;s what Obai&apos;s app is built for.
+            </p>
+            <p className="mt-4">
+              In a world of advanced solutions, sometimes the simplest answer is the best one. Ready to streamline your hail claims process? Try Obai today and experience the power of simplicity firsthand.
+            </p>
+          </section>
+        </div>
       </div>
 
       {/* Call to Action */}

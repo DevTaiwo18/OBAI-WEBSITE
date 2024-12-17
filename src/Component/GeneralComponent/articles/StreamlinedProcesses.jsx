@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import CapacitorJS from "../../../assets/articles/Simple.png";
 
 const StreamlinedProcesses = () => {
   const scrollToSection = (id) => {
@@ -48,7 +49,14 @@ const StreamlinedProcesses = () => {
           </button>
         </li>
       </ul>
-
+ {/* Image Section */}
+      <div className="relative w-full max-w-6xl mx-auto mb-8 flex justify-center">
+        <img
+          src={CapacitorJS}
+          alt="If your users won't use it, then why add it"
+          className="object-cover w-full h-auto"
+        />
+      </div>
       {/* Content Sections */}
       <div className="max-w-6xl mx-auto space-y-16 text-gray-700 text-sm sm:text-base leading-relaxed">
         {/* Section 1 */}
