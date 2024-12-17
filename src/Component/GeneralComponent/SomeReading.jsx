@@ -1,18 +1,19 @@
 import BG from "./../../assets/Rectangle 38.png";
+import { Link } from "react-router-dom"; // Import Link
 
 const SomeReading = () => {
   const articles = [
     {
       title: "Innovative Solutions for Hassle-Free Claims",
-      link: "./articles/InnovativeSolutions",
+      link: "/articles/innovative-solutions",
     },
     {
       title: "Streamlined Processes for Better Service",
-      link: "./articles/streamlined-processes",
+      link: "/articles/streamlined-processes",
     },
     {
       title: "Customer-Centric Approach in Every Interaction",
-      link: "./articles/customer-centric-approach",
+      link: "/articles/customer-centric-approach",
     },
   ];
 
@@ -27,9 +28,9 @@ const SomeReading = () => {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {articles.map((article, index) => (
-          <a 
-            key={index} 
-            href={article.link} 
+          <Link
+            key={index}
+            to={article.link} // Use 'to' instead of 'href'
             className="relative rounded-[30px] overflow-hidden shadow-lg h-48 block"
             style={{
               boxShadow: `35px 164px 47px 0px rgba(23, 23, 23, 0.00),
@@ -52,7 +53,7 @@ const SomeReading = () => {
                 {article.title}
               </h3>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

@@ -1,87 +1,98 @@
-const StreamlinedProcesses = () => {
+import { ArrowRight } from 'lucide-react';
+
+const InnovativeSolutions = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <article className="p-8">
-      <h1 className="text-3xl font-extrabold mb-6">
-        Innovative Solutions for Hassle-Free Claims
-      </h1>
-      <p className="text-lg leading-relaxed">
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur justo
-        dapibus quisque; aliquam dictum egestas magnis. Libero vestibulum nullam
-        vivamus erat sem; velit ligula sodales erat. Suspendisse cras quis
-        platea urna turpis feugiat elementum. Aliquam orci penatibus malesuada
-        inceptos eu litora eleifend. Quam vitae parturient natoque nisl luctus
-        per placerat. Felis enim maximus montes eros habitasse. Duis scelerisque
-        nostra dignissim; convallis class luctus. Porttitor ex finibus primis
-        facilisis mollis. Nascetur etiam sed mus molestie eu. Porta himenaeos
-        dui laoreet; ac iaculis aliquam. Faucibus hac aliquet posuere a sapien
-        porttitor. Proin torquent auctor non platea class blandit porta ornare
-        condimentum. Amet nibh ex dictum duis a erat habitant sapien. Placerat
-        volutpat eros vel euismod bibendum eget parturient condimentum vivamus.
-        Elementum massa velit ultrices sed egestas; at natoque nibh. Nisl
-        porttitor risus dapibus adipiscing pulvinar; hac torquent nisl. Posuere
-        varius litora habitasse orci; torquent cubilia. Neque est tempor
-        maecenas congue ex. Donec habitant magna finibus, posuere at porttitor
-        porta mattis. Tellus sodales egestas morbi rutrum tempor egestas
-        sollicitudin. Magna scelerisque eleifend nisl turpis amet mus cubilia
-        fermentum. Leo volutpat neque rhoncus luctus posuere. Natoque purus
-        fringilla suscipit maecenas et. Montes quis efficitur quam dictum
-        integer potenti vulputate aenean. Hac vitae vehicula; euismod velit
-        rutrum lectus. Potenti cursus phasellus lorem molestie netus massa
-        porta. Rhoncus at nam duis eros aliquam. Blandit pretium dapibus
-        habitant per convallis; suscipit sagittis eu. Lacinia curabitur pharetra
-        feugiat feugiat, enim nascetur. Mattis aliquet urna lectus dictumst
-        nostra. In blandit aptent placerat suspendisse mollis erat ante et.
-        Auctor etiam lectus fames penatibus elementum vulputate purus.
-        Pellentesque mollis porttitor augue vehicula sodales nunc cras? Pharetra
-        taciti eget penatibus tristique sodales torquent vivamus sodales.
-        Bibendum velit turpis pretium natoque facilisis efficitur. Urna ante
-        mollis ultrices turpis dapibus adipiscing molestie vivamus. Dolor turpis
-        convallis, purus purus convallis mus. Rutrum dictumst nunc tempus ut
-        sapien velit ipsum non himenaeos. Porta venenatis non nibh bibendum sem
-        laoreet. Pellentesque ultrices maecenas donec accumsan eget litora nec
-        nisi. Lacus nostra felis eros litora turpis quis consectetur, tortor
-        sit. Fames laoreet justo nisl sem suspendisse augue elementum. Asenectus
-        senectus blandit magnis porttitor tincidunt scelerisque morbi himenaeos.
-        Nisl per sodales consectetur natoque per adipiscing mus mollis.
-        Condimentum sed nibh ornare laoreet finibus turpis phasellus eleifend.
-        Placerat efficitur vulputate justo pulvinar condimentum praesent finibus
-        donec. Inceptos augue magnis in nibh cubilia taciti ad. Consequat est
-        aptent mus suscipit arcu dictumst ligula. Est finibus lacus bibendum
-        urna, senectus purus odio velit netus. Elementum blandit egestas leo
-        dictumst semper. Mauris maecenas praesent nam proin ante nostra sem.
-        Vulputate enim sit dictum elementum laoreet porta arcu. Ullamcorper
-        inceptos suscipit semper nunc vulputate faucibus. Ridiculus ipsum
-        volutpat suspendisse fusce integer semper. Blandit luctus aliquam
-        curabitur praesent sodales conubia. Mauris proin bibendum odio interdum
-        consectetur netus netus eleifend lacus. Quisque massa accumsan fermentum
-        habitasse senectus; sodales blandit sed. Enim arcu ligula ex condimentum
-        orci ligula pellentesque velit venenatis. Metus vitae eget dictumst,
-        interdum magnis habitant auctor. Mauris in inceptos condimentum maximus
-        vivamus fusce nec hendrerit. Nunc sollicitudin lorem sem platea primis
-        sociosqu mollis. Maecenas maecenas cursus enim viverra torquent id lacus
-        penatibus? Maximus urna ipsum maecenas dapibus placerat porttitor
-        finibus. Convallis erat facilisi commodo facilisi inceptos convallis
-        elit sit. Hac bibendum fringilla eleifend integer litora velit. Augue
-        ullamcorper penatibus, semper elit massa cursus. Dolor suspendisse proin
-        ex; sociosqu volutpat molestie. Potenti orci faucibus faucibus vulputate
-        elit sapien. Convallis ullamcorper pulvinar platea dolor tincidunt.
-        Praesent scelerisque urna efficitur class vitae. Mauris scelerisque eget
-        ultrices interdum rutrum mollis duis urna. Eros dictum ex congue quis
-        fames nisi pellentesque aliquet. Feugiat efficitur adipiscing auctor
-        morbi dui aliquam velit odio. Fermentum curae id libero volutpat
-        vulputate blandit sed neque. Egestas sodales vulputate metus orci ante
-        nullam venenatis neque. Vestibulum fusce leo nibh pharetra lacus
-        facilisi ac. Vulputate metus placerat, nascetur eu eros vulputate ut
-        aenean non. Lobortis sodales maecenas luctus urna feugiat. Proin odio
-        egestas maecenas luctus nostra sem fringilla pulvinar. Magna quis litora
-        bibendum, purus nisi fusce elementum aliquam cras? Congue primis
-        habitasse morbi rutrum nibh eu finibus massa. Urna pretium fermentum
-        faucibus blandit congue ac ac. Hac dapibus ornare egestas felis
-        vulputate leo id. Ipsum mi auctor tellus ex litora commodo lobortis
-        tellus.
-      </p>
-    </article>
+    <div className="flex flex-col items-center">
+      <article className="flex flex-col p-6 max-w-5xl">
+        <h1 className="text-2xl font-extrabold mb-6 text-brand-primary">Steamlined Process</h1>
+        
+        <ul className="flex flex-col gap-4">
+          <li>
+            <button onClick={() => scrollToSection('emerging-tech')} className="text-gray-700 hover:text-[#FF5F1E] transition-colors text-left">
+              Emerging Technologies
+            </button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection('digital-transformation')} className="text-gray-700 hover:text-[#FF5F1E] transition-colors text-left">
+              Digital Transformation
+            </button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection('sustainability')} className="text-brand-dark hover:text-brand-primary active:text-brand-tertiary font-medium transition-colors text-left">
+              Sustainability
+            </button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection('future-work')} className="text-gray-700 hover:text-[#FF5F1E] transition-colors text-left">
+              Future of Work
+            </button>
+          </li>
+        </ul>
+        <br/>
+        <p className="text-lg leading-relaxed mb-8">
+          In today&apos;s rapidly evolving business landscape, organizations must embrace innovation to stay competitive and meet changing customer demands.
+        </p>
+
+        {/** Sections */}
+        <section id="emerging-tech" className="mb-12">
+          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Emerging Technologies</h2>
+          <ul className="list-disc ml-6 text-lg leading-relaxed">
+            <li><strong>Artificial Intelligence & Machine Learning:</strong> Advanced algorithms...</li>
+            <li><strong>Internet of Things (IoT):</strong> Connected devices...</li>
+            <li><strong>Edge Computing:</strong> Processing data closer...</li>
+            <li><strong>Quantum Computing:</strong> Next-generation computing...</li>
+          </ul>
+        </section>
+
+        <section id="digital-transformation" className="mb-12">
+          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Digital Transformation</h2>
+          <ul className="list-disc ml-6 text-lg leading-relaxed">
+            <li><strong>Cloud-Native Architecture:</strong> Modern applications...</li>
+            <li><strong>Data-Driven Decision Making:</strong> Advanced analytics...</li>
+            <li><strong>Customer Experience:</strong> Digital channels...</li>
+            <li><strong>Process Automation:</strong> Robotic process automation...</li>
+          </ul>
+        </section>
+
+        <section id="sustainability" className="mb-12">
+          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Sustainability</h2>
+          <ul className="list-disc ml-6 text-lg leading-relaxed">
+            <li><strong>Green Technology:</strong> Clean energy solutions...</li>
+            <li><strong>Circular Economy:</strong> Innovative business models...</li>
+            <li><strong>Carbon Management:</strong> Advanced tools...</li>
+            <li><strong>Sustainable Supply Chains:</strong> Organizations are reimagining...</li>
+          </ul>
+        </section>
+
+        <section id="future-work" className="mb-12">
+          <h2 className="text-2xl font-extrabold mb-6 text-brand-primary">Future of Work</h2>
+          <ul className="list-disc ml-6 text-lg leading-relaxed">
+            <li><strong>Hybrid Workplaces:</strong> Advanced collaboration tools...</li>
+            <li><strong>AI-Powered Productivity:</strong> Intelligent tools...</li>
+            <li><strong>Skills Revolution:</strong> Continuous learning...</li>
+            <li><strong>Employee Experience:</strong> Digital workplace solutions...</li>
+          </ul>
+        </section>
+
+        <div className="mt-12 pt-6 border-t border-gray-200">
+          <a href="/articles/customer-centric-approach" className="group flex items-center gap-6 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-1">Customer Centric Approach</h3>
+              <p className="text-gray-500">Learn about building and implementing effective digital transformation strategies.</p>
+            </div>
+            <ArrowRight className="w-6 h-6 text-[#FF5F1E] transform group-hover:translate-x-2 transition-transform" />
+          </a>
+        </div>
+      </article>
+    </div>
   );
 };
 
-export default StreamlinedProcesses;
+export default InnovativeSolutions;
