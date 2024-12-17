@@ -13,11 +13,10 @@ const InnovativeSolutions = () => {
       {/* Title Section */}
       <div className="text-left ps-3 md:ps-0 sm:text-left md:text-center mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#171717]">
-          Innovative Solutions
+          CapacitorJS: A Leaner Hail Claims Process
         </h1>
         <p className="text-gray-600 mt-3 max-w-3xl mx-auto sm:mx-0 md:mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
-          Explore the groundbreaking solutions that are shaping industries, driving sustainable growth,
-          and redefining the future of business.
+          Discover why Obai chose CapacitorJS to build a lean web app for faster, simpler hail claims processing. Learn how simplicity improves efficiency for appraisers and insurers.
         </p>
       </div>
 
@@ -25,34 +24,26 @@ const InnovativeSolutions = () => {
       <ul className="flex flex-wrap justify-start ps-3 md:ps-0 md:justify-center gap-4 md:gap-8 mb-10">
         <li>
           <button
-            onClick={() => scrollToSection('emerging-tech')}
+            onClick={() => scrollToSection('native-app-drawbacks')}
             className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Emerging Technologies
+            Native App Drawbacks
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection('digital-transformation')}
+            onClick={() => scrollToSection('capacitorjs-benefits')}
             className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Digital Transformation
+            CapacitorJS Benefits
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection('sustainability')}
+            onClick={() => scrollToSection('simplicity-efficiency')}
             className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Sustainability
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => scrollToSection('future-work')}
-            className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
-          >
-            Future of Work
+            Simplicity = Efficiency
           </button>
         </li>
       </ul>
@@ -60,46 +51,32 @@ const InnovativeSolutions = () => {
       {/* Content Sections */}
       <div className="max-w-6xl mx-auto space-y-16 text-gray-700 text-sm sm:text-base leading-relaxed">
         {/* Section 1 */}
-        <section id="emerging-tech" className="text-left px-4">
+        <section id="native-app-drawbacks" className="text-left px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Emerging Technologies
+            Why Native Apps Aren&apos;t Always the Best Option
           </h2>
           <p>
-            From Artificial Intelligence to IoT, emerging technologies are empowering organizations to
-            achieve unprecedented innovation, efficiency, and agility in their operations.
+            Native apps can be overcomplicated, requiring separate codebases for iOS and Android, frequent updates, and constant maintenance. This complexity can slow down workflows in industries like automotive insurance, where simplicity is key.
           </p>
         </section>
 
         {/* Section 2 */}
-        <section id="digital-transformation" className="text-left px-4">
+        <section id="capacitorjs-benefits" className="text-left px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Digital Transformation
+            Our Solution: A Lean Web App Built with CapacitorJS
           </h2>
           <p>
-            Businesses are leveraging cloud-native architectures, process automation, and data-driven
-            decision-making to transform customer experiences and drive growth.
+            CapacitorJS allows us to create a web app that offers a native-like experience while being easier to maintain. With a single codebase, development is faster and updates are seamless. Appraisers benefit from features like AR annotations and AI-powered photo validation, enhancing their workflow efficiency.
           </p>
         </section>
 
         {/* Section 3 */}
-        <section id="sustainability" className="text-left px-4">
+        <section id="simplicity-efficiency" className="text-left px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Sustainability
+            Simplicity Equals Efficiency
           </h2>
           <p>
-            Sustainable innovations, such as green technology and circular economies, are enabling
-            businesses to minimize their environmental impact while fostering long-term success.
-          </p>
-        </section>
-
-        {/* Section 4 */}
-        <section id="future-work" className="text-left px-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Future of Work
-          </h2>
-          <p>
-            The workplace of tomorrow prioritizes collaboration, flexibility, and continuous learning,
-            powered by intelligent tools and a focus on employee well-being.
+            By choosing simplicity, we ensure our users have the tools they need without unnecessary bloat. With automatic updates, appraisers always have access to the most current features, allowing them to process claims quickly and efficiently.
           </p>
         </section>
       </div>
@@ -107,16 +84,15 @@ const InnovativeSolutions = () => {
       {/* Call to Action */}
       <div className="mt-16 pt-8 border-t border-gray-200">
         <a
-          href="/articles/customer-centric-approach"
+          href="/contact"
           className="group flex flex-col md:flex-row items-center justify-between gap-6 p-6 rounded-lg bg-[#FFFDF9] hover:bg-gray-100 transition-colors shadow-md"
         >
           <div className="text-left text-sm sm:text-base">
             <h3 className="text-lg sm:text-xl font-semibold text-[#171717] mb-1">
-              Customer-Centric Approach
+              Let&apos;s Talk
             </h3>
             <p className="text-gray-600">
-              Discover strategies to prioritize customer needs and deliver exceptional digital
-              experiences.
+              Learn how Obai can help you streamline your hail claims process with simple, effective tools.
             </p>
           </div>
           <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-[#FF5F1E] group-hover:translate-x-2 transition-transform" />

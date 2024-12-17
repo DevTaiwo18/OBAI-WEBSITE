@@ -4,15 +4,15 @@ import { Link } from "react-router-dom"; // Import Link
 const SomeReading = () => {
   const articles = [
     {
-      title: "Innovative Solutions for Hassle-Free Claims",
+      title: "CapacitorJS: A Leaner Hail Claims Process",
       link: "/articles/innovative-solutions",
     },
     {
-      title: "Streamlined Processes for Better Service",
+      title: "CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process",
       link: "/articles/streamlined-processes",
     },
     {
-      title: "Customer-Centric Approach in Every Interaction",
+      title: "If Your Users Won’t Use It, Then Why Add It",
       link: "/articles/customer-centric-approach",
     },
   ];

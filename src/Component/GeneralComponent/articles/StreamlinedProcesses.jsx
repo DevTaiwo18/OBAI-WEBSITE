@@ -12,46 +12,39 @@ const StreamlinedProcesses = () => {
     <div className="w-full px-4 sm:px-6 lg:px-20 py-12 bg-gray-50">
       {/* Title Section */}
       <div className="text-left ps-3 md:ps-0 sm:text-left md:text-center mb-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#171717] mb-4">
-          Streamlined Processes
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#171717]">
+          CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process
         </h1>
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mx-auto max-w-3xl">
-          Explore the key innovations driving sustainable growth, improving efficiency, and shaping the future of industries.
+        <p className="text-gray-600 mt-3 max-w-3xl mx-auto sm:mx-0 md:mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
+          Discover why Obai chose CapacitorJS to build a lean web app for faster, simpler hail claims
+          processing. Learn how simplicity improves efficiency for appraisers and insurers.
         </p>
       </div>
 
       {/* Navigation Buttons */}
-      <ul className="flex ps-3 md:ps-0  flex-wrap justify-start md:justify-center gap-4 md:gap-8 mb-10">
+      <ul className="flex flex-wrap justify-start ps-3 md:ps-0 md:justify-center gap-4 md:gap-8 mb-10">
         <li>
           <button
-            onClick={() => scrollToSection('emerging-tech')}
-            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
+            onClick={() => scrollToSection('native-app-drawbacks')}
+            className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Emerging Technologies
+            Native App Drawbacks
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection('digital-transformation')}
-            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
+            onClick={() => scrollToSection('capacitorjs-benefits')}
+            className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Digital Transformation
+            CapacitorJS Benefits
           </button>
         </li>
         <li>
           <button
-            onClick={() => scrollToSection('sustainability')}
-            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
+            onClick={() => scrollToSection('simplicity-efficiency')}
+            className="text-gray-800 font-medium hover:text-[#FF5F1E] transition-colors text-sm sm:text-base"
           >
-            Sustainability
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => scrollToSection('future-work')}
-            className="text-gray-800 text-sm sm:text-base hover:text-[#FF5F1E] transition-colors"
-          >
-            Future of Work
+            Simplicity = Efficiency
           </button>
         </li>
       </ul>
@@ -59,42 +52,46 @@ const StreamlinedProcesses = () => {
       {/* Content Sections */}
       <div className="max-w-6xl mx-auto space-y-16 text-gray-700 text-sm sm:text-base leading-relaxed">
         {/* Section 1 */}
-        <section id="emerging-tech" className="text-left px-2">
+        <section id="native-app-drawbacks" className="text-left px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Emerging Technologies
+            Why Native Apps Aren&apos;t Always the Best Option
           </h2>
           <p>
-            From Artificial Intelligence to IoT, emerging technologies empower organizations to achieve unprecedented innovation and agility.
+            Native apps can be overcomplicated. With different codebases for iOS and Android, the need
+            for constant updates, and the hassle of keeping everything running smoothly, native apps
+            can create more problems than they solve. In the world of automotive insurance, where
+            appraisers need tools that just work, this complexity can slow things down.
           </p>
         </section>
 
         {/* Section 2 */}
-        <section id="digital-transformation" className="text-left px-2">
+        <section id="capacitorjs-benefits" className="text-left px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Digital Transformation
+            Our Solution: A Lean Web App Built with CapacitorJS
           </h2>
           <p>
-            Leveraging cloud-native architectures and process automation, businesses transform customer experiences and accelerate growth.
+            With CapacitorJS, we found a way to offer the best of both worlds. Our web app delivers a
+            seamless experience, behaving like a native app while being easier to maintain and update.
+            It uses a single codebase, making development quicker and more efficient, and because it
+            runs directly in the browser, there&apos;s no need to worry about downloads or compatibility
+            issues.
+          </p>
+          <p>
+            For appraisers, this means a faster, more efficient workflow. Features like AR annotations
+            and AI-powered photo validation work seamlessly, allowing appraisers to focus on what
+            matters—assessing damage and processing claims quickly.
           </p>
         </section>
 
         {/* Section 3 */}
-        <section id="sustainability" className="text-left px-2">
+        <section id="simplicity-efficiency" className="text-left px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Sustainability
+            Simplicity Equals Efficiency
           </h2>
           <p>
-            Green technology, circular economies, and sustainable practices help businesses reduce environmental impact and drive long-term success.
-          </p>
-        </section>
-
-        {/* Section 4 */}
-        <section id="future-work" className="text-left px-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#FF5F1E]">
-            Future of Work
-          </h2>
-          <p>
-            Future workplaces prioritize collaboration, flexibility, and continuous learning, enhancing productivity with intelligent tools.
+            By choosing a simple web app, we ensure that our users get a tool that helps them do their
+            jobs better. No bloat, no unnecessary features—just the essentials. And because updates
+            happen automatically, our users always have the most current tools at their fingertips.
           </p>
         </section>
       </div>
@@ -102,18 +99,20 @@ const StreamlinedProcesses = () => {
       {/* Call to Action */}
       <div className="mt-16 pt-8 border-t border-gray-200">
         <a
-          href="/articles/customer-centric-approach"
+          href="/contact"
           className="group flex flex-col md:flex-row items-center justify-between gap-6 p-6 rounded-lg bg-[#FFFDF9] hover:bg-gray-100 transition-colors shadow-md"
         >
-          <div className="text-left">
+          <div className="text-left text-sm sm:text-base">
             <h3 className="text-lg sm:text-xl font-semibold text-[#171717] mb-1">
-              Customer-Centric Approach
+              Let’s Talk
             </h3>
             <p className="text-gray-600">
-              Discover strategies to prioritize customer needs and deliver exceptional digital experiences.
+              If you&apos;re looking for a streamlined solution to make your hail claims process more
+              efficient, we&apos;d love to talk. Contact us today to learn how Obai can help you save time
+              and money with simple, effective tools.
             </p>
           </div>
-          <ArrowRight className="w-5 sm:w-6 h-5 sm:h-6 text-[#FF5F1E] group-hover:translate-x-2 transition-transform" />
+          <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-[#FF5F1E] group-hover:translate-x-2 transition-transform" />
         </a>
       </div>
     </div>
