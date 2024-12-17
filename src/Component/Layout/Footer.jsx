@@ -25,7 +25,7 @@ function Footer() {
             <li><Link to="/how-we-started" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">How It Works</Link></li>
             <li><Link to="/resources" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Resources</Link></li>
             <li><Link to="/contact" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Contact</Link></li>
-            <li><Link to="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0fdyo8OE4MPhwQRmYl1z5e7EYHiDLzMS9mnBxQtvGwmoqTUWOAkc980djHTZNnd4GXWC-FNBmr?gv=true" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Demo</Link></li>
+            <li><Link to="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Demo</Link></li>
           </ul>
         </div>
       </div>
