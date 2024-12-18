@@ -8,7 +8,7 @@ const WhoWeAre = () => {
     <div className="py-10 md:py-16 px-4 md:px-20">
       {/* Section Title */}
       <div className="text-center mb-5 md:mb-12">
-        <h3 className="text-lg text-[#FF5F1E] mb-2">ABOUT</h3> {/* Updated to brand orange */}
+        {/* <h3 className="text-lg text-[#FF5F1E] mb-2">ABOUT</h3> Updated to brand orange */}
         <h1 className="text-2xl md:text-4xl font-extrabold text-[#171717]">Who we are</h1> {/* Updated to brand black */}
       </div>
 

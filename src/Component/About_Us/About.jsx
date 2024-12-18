@@ -31,13 +31,13 @@ function About() {
         <title>OBAI - About</title>
         <meta name="description" content="Welcome to the OBAI website About page." />
       </Helmet>
-      
-      <AnimatedSection>
-        <WhoWeAre />
-      </AnimatedSection>
 
       <AnimatedSection>
         <HowWeStarted />
+      </AnimatedSection>
+      
+      <AnimatedSection>
+        <WhoWeAre />
       </AnimatedSection>
 
       <AnimatedSection>
