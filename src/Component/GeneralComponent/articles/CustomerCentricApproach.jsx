@@ -12,11 +12,11 @@ const CustomerCentricApproach = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-20 py-12 bg-gray-50">
       {/* Title Section */}
-      <div className="text-left ps-3 md:ps-0 sm:text-left md:text-center mb-12">
+      <div className="text-left md:text-center mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#171717]">
           If Your Users Won&apos;t Use It, Then Why Add It?
         </h1>
-        <p className="text-gray-600 mt-3 max-w-3xl mx-auto sm:mx-0 md:mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
+        <p className="text-gray-600 mt-3 max-w-3xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
           Discover why simplicity matters in hail claims apps. Learn how
           Obai&apos;s streamlined solution boosts efficiency for appraisers and
           insurance companies.
@@ -24,7 +24,7 @@ const CustomerCentricApproach = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <ul className="flex flex-wrap justify-start ps-3 md:ps-0 md:justify-center gap-4 md:gap-8 mb-10">
+      <ul className="flex flex-wrap justify-start md:justify-center gap-4 md:gap-8 mb-10">
         <li>
           <button
             onClick={() => scrollToSection("simplicity-efficiency")}
@@ -52,11 +52,11 @@ const CustomerCentricApproach = () => {
       </ul>
 
       {/* Image Section */}
-      <div className="relative w-full max-w-6xl mx-auto mb-8 flex justify-center">
+      <div className="relative w-full max-w-6xl mx-auto mb-8">
         <img
           src={UsersWontUseImage}
           alt="If your users won't use it, then why add it"
-          className="object-cover w-full h-auto"
+          className="object-cover w-full h-auto rounded-lg shadow-md"
         />
       </div>
 
@@ -88,7 +88,7 @@ const CustomerCentricApproach = () => {
             advanced doesn’t mean more effective. In fact, it usually means more
             things to manage, more chances for error, and more maintenance.
           </p>
-          <p>
+          <p className="mt-4">
             At Obai, we know that simplicity is key. Our app focuses on core
             features like real-time photo validation—things our users actually
             need to do their jobs faster. No extra fluff, just solutions that
@@ -107,7 +107,7 @@ const CustomerCentricApproach = () => {
             companies manage claims more efficiently. We keep things simple
             because we know that&apos;s what works.
           </p>
-          <p>
+          <p className="mt-4">
             Next time you&apos;re thinking of adding a new feature, ask
             yourself: &quot;Will my users actually use this?&quot; If not,
             it&apos;s probably not worth adding. Build what&apos;s necessary,

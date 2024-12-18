@@ -12,18 +12,18 @@ const StreamlinedProcesses = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-20 py-12 bg-gray-50">
       {/* Title Section */}
-      <div className="text-left ps-3 md:ps-0 sm:text-left md:text-center mb-12">
+      <div className="text-left md:text-center mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#171717]">
           CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process
         </h1>
-        <p className="text-gray-600 mt-3 max-w-3xl mx-auto sm:mx-0 md:mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
+        <p className="text-gray-600 mt-3 max-w-3xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
           Discover why Obai chose CapacitorJS to build a lean web app for faster, simpler hail claims
           processing. Learn how simplicity improves efficiency for appraisers and insurers.
         </p>
       </div>
 
       {/* Navigation Buttons */}
-      <ul className="flex flex-wrap justify-start ps-3 md:ps-0 md:justify-center gap-4 md:gap-8 mb-10">
+      <ul className="flex flex-wrap justify-start md:justify-center gap-4 md:gap-8 mb-10">
         <li>
           <button
             onClick={() => scrollToSection('native-app-drawbacks')}
@@ -49,14 +49,16 @@ const StreamlinedProcesses = () => {
           </button>
         </li>
       </ul>
- {/* Image Section */}
+
+      {/* Image Section */}
       <div className="relative w-full max-w-6xl mx-auto mb-8 flex justify-center">
         <img
           src={CapacitorJS}
-          alt="If your users won't use it, then why add it"
-          className="object-cover w-full h-auto"
+          alt="CapacitorJS benefits for hail claims processing"
+          className="object-cover w-full h-auto rounded-lg shadow-md"
         />
       </div>
+
       {/* Content Sections */}
       <div className="max-w-6xl mx-auto space-y-16 text-gray-700 text-sm sm:text-base leading-relaxed">
         {/* Section 1 */}

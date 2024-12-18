@@ -1,3 +1,4 @@
+import BG from "./../../assets/Rectangle 38.png";
 import { Link } from "react-router-dom"; // Import Link
 
 const SomeReading = () => {
@@ -7,8 +8,7 @@ const SomeReading = () => {
       link: "/articles/innovative-solutions",
     },
     {
-      title:
-        "CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process",
+      title: "CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process",
       link: "/articles/streamlined-processes",
     },
     {
@@ -19,6 +19,7 @@ const SomeReading = () => {
 
   return (
     <section className="py-8 md:py-16 px-4 md:px-8 lg:px-20">
+      {/* Title */}
       <div className="text-center mb-10">
         <h1 className="text-2xl md:text-4xl font-extrabold text-[#171717]">
           Some light reading
@@ -30,7 +31,7 @@ const SomeReading = () => {
         {articles.map((article, index) => (
           <Link
             key={index}
-            to={article.link} // Use 'to' instead of 'href'
+            to={article.link} // Use 'to' for react-router-dom
             className="relative rounded-[30px] overflow-hidden shadow-lg h-48 block"
             style={{
               boxShadow: `35px 164px 47px 0px rgba(23, 23, 23, 0.00),
@@ -40,29 +41,20 @@ const SomeReading = () => {
                           1px 7px 15px 0px rgba(23, 23, 23, 0.05)`,
             }}
           >
+            {/* Background Image */}
             <div
-              className="absolute inset-0 bg-gradient-to-r"
-              style={{
-                background:
-                  "linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(58, 58, 58, 0.9), transparent)",
-                width: "85%",
-              }}
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${BG})` }}
             ></div>
-            <div
-              className="absolute inset-0 bg-gradient-to-r"
-              style={{
-                background: `linear-gradient(to right, rgba(23, 23, 23, 0.9), rgba(58, 58, 58, 0.9)), transparent)`,
-                width: "95%",
-              }}
-            ></div>
+
+            {/* Gradient Overlay */}
             <div
               className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-transparent"
-              style={{
-                background:
-                  "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(58, 58, 58, 0.9), transparent)",
-                width: "85%",
-              }}
-            >
+              style={{ width: "85%" }}
+            ></div>
+
+            {/* Title */}
+            <div className="relative h-full flex items-center">
               <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
                 {article.title}
               </h3>
