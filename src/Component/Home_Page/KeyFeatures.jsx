@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import accuracyImage from '../../assets/Accuracy.png';
 import arRepairImage from '../../assets/AR repair.png';
@@ -7,23 +6,23 @@ import repairBotImage from '../../assets/RepairBot.png';
 
 const features = [
   {
-    title: '90%+ Accuracy',
-    description: '90%+ Accuracy on hail damage repair estimates.',
-    image: accuracyImage
-  },
-  {
-    title: 'AR Repair',
-    description: 'Augmented reality vehicle damage analysis.',
-    image: arRepairImage
-  },
-  {
-    title: '5 minutes',
-    description: 'Streamline the claims process to take as little as 5 minutes.',
+    title: 'Faster Claim Turnaround',
+    description: 'Reduce claim submission times to as little as 6 minutes.',
     image: fiveMinutesImage
   },
   {
-    title: 'RepairBot',
-    description: 'Answer customer questions without having to be there.',
+    title: 'AI-Powered Accuracy',
+    description: 'Achieve over 90% accuracy with AI-driven damage assessments.',
+    image: accuracyImage
+  },
+  {
+    title: 'AR-Guided Workflows',
+    description: 'Capture high-quality images and analyze damage with AR tools.',
+    image: arRepairImage
+  },
+  {
+    title: 'Seamless Customer Support',
+    description: 'Answer customer questions with RepairBot automation.',
     image: repairBotImage
   }
 ];
