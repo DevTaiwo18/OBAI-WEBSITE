@@ -4,10 +4,11 @@ import Kameron from '../../assets/kam.webp';
 import Justin from '../../assets/justin.webp';
 import Todd from '../../assets/todd.webp';
 import Mo from '../../assets/Mo_Daniel.png';
-import Frank from '../../assets/frank.png';
-import Adeyemi from '../../assets/optimized/adeyemi.png';
-import Waldo from '../../assets/waldobg.png';
-import Jonathan from '../../assets/jona.png';
+import Frank from '../../assets/FrankLamarBG.jpg';
+import Adeyemi from '../../assets/adeyemiBackground.jpg';
+import Waldo from '../../assets/waldo_background.jpg';
+import Jonathan from '../../assets/Jonathan_background.jpg';
+import LinkedIn from '../../assets/LinkedIn.svg';
 
 const teamMembers = [
   { name: "Kameron Seabrook", role: "Founder & CEO", image: Kameron, linkedin: "https://www.linkedin.com/in/kameron-seabrook/" },
@@ -20,23 +21,43 @@ const teamMembers = [
   { name: "Adeyemi Taiwo", role: "Jr. Software Engineer", image: Adeyemi, linkedin: "https://www.linkedin.com/in/adeyemi-taiwo-5892082b0/" },
 ];
 
+
 const TeamMemberCard = ({ name, role, image, linkedin }) => (
-  <a href={linkedin} target="_blank" rel="noopener noreferrer">
-    <motion.div 
-      className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-      whileHover={{ y: -5 }}
-      transition={{ type: "spring", stiffness: 300 }}
-    >
-      <div className="bg-[rgb(255,230,0)] h-64 flex items-center justify-center">
-        <img src={image} alt={name} className="h-full w-full object-cover" />
+  <motion.div
+    className="bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg-rounded overflow-hidden shadow-custom hover:shadow-lg transition-shadow duration-300"
+    whileHover={{ y: -5 }}
+    transition={{ type: "spring", stiffness: 300 }}
+  >
+    {/* Image */}
+    <div>
+      <img
+        src={image}
+        alt={name}
+        className="w-full h-64 object-cover object-center"
+      />
+    </div>
+
+    {/* White Section: Name, Title, LinkedIn */}
+    <div className="flex flex-col items-start p-6 bg-brand-white">
+      <div className="text-left mb-4">
+        <h4 className="text-lg font-bold text-brand-dark mb-1">{name}</h4>
+        <p className="text-sm text-brand-dark">{role}</p>
       </div>
-      <div className="p-6">
-        <h4 className="text-xl font-extrabold text-blue-900 mb-1">{name}</h4>
-        <p className="text-sm text-gray-600">{role}</p>
+      <hr width="90%" size="1"/> 
+      <div className="pt-2">
+      <a
+        href={linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+         <img src={LinkedIn} alt="Logo" width={30}/>
+      </a>
       </div>
-    </motion.div>
-  </a>
+    </div>
+  </motion.div>
 );
+
 
 TeamMemberCard.propTypes = {
   name: PropTypes.string.isRequired,

@@ -36,9 +36,9 @@ function About() {
         <HowWeStarted />
       </AnimatedSection>
       
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <WhoWeAre />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       <AnimatedSection>
         <DreamTeam />
