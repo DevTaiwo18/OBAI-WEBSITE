@@ -13,6 +13,8 @@ const Contact = lazy(() => import('./Component/Contact_Us/Contact'));
 const InnovativeSolutions = lazy(() => import('./Component/GeneralComponent/articles/InnovativeSolutions'));
 const StreamlinedProcesses = lazy(() => import('./Component/GeneralComponent/articles/StreamlinedProcesses'));
 const CustomerCentricApproach = lazy(() => import('./Component/GeneralComponent/articles/CustomerCentricApproach'));
+const MoreDoesNotMeanBetter = lazy(() => import('./Component/GeneralComponent/articles/MoreDoesNotMeanBetter'));
+const JustBecauseYourTech = lazy(() => import('./Component/GeneralComponent/articles/JustBecauseYourTech'));
 // const Demo = lazy(() => import('./Component/Demo/Demo'));
 const Howitswork = lazy(() => import('./Component/HowItsWorkFolder/Howitswork'));
 
@@ -68,6 +70,8 @@ function App() {
             <Route path="/articles/innovative-solutions" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><InnovativeSolutions /></Suspense>} />
             <Route path="/articles/streamlined-processes" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><StreamlinedProcesses /></Suspense>} />
             <Route path="/articles/customer-centric-approach" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><CustomerCentricApproach /></Suspense>} />
+            <Route path="/articles/more-does-not-mean-better" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><MoreDoesNotMeanBetter /></Suspense>} />
+            <Route path="/articles/just-because-your-tech-can-do-something" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><JustBecauseYourTech /></Suspense>} />
           </Routes>
         </AnimatePresence>
           </main>

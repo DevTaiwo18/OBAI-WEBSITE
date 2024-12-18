@@ -1,4 +1,6 @@
-import BG from "./../../assets/Rectangle 38.png";
+import CapacitorJS from "./../../assets/articles/Simple.png";
+import UsersWontUseImage from "./../../assets/articles/Users_wont_use.png";
+import JustBecauseYourTechPhoto from "./../../assets/articles/Just_because_your_tech_can_do_something.png";
 import { Link } from "react-router-dom"; // Import Link
 
 const SomeReading = () => {
@@ -6,14 +8,17 @@ const SomeReading = () => {
     {
       title: "Simple vs. Advanced Solutions – What Do You Actually Need?",
       link: "/articles/innovative-solutions",
+      articleImage: JustBecauseYourTechPhoto
     },
     {
       title: "CapacitorJS: Why We Chose a Web App for a Leaner Hail Claims Process",
       link: "/articles/streamlined-processes",
+      articleImage: CapacitorJS
     },
     {
       title: "If Your Users Won’t Use It, Then Why Add It",
       link: "/articles/customer-centric-approach",
+      articleImage: UsersWontUseImage
     },
   ];
 
@@ -44,13 +49,13 @@ const SomeReading = () => {
             {/* Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${BG})` }}
+              style={{ backgroundImage: `url(${article.articleImage})` }}
             ></div>
 
             {/* Gradient Overlay */}
             <div
-              className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-transparent"
-              style={{ width: "85%" }}
+                className="absolute inset-0 bg-gradient-to-r from-brand-dark to-transparent md:w-[65%] w-[75%]"
+                style={{ width: "85%" }}
             ></div>
 
             {/* Title */}

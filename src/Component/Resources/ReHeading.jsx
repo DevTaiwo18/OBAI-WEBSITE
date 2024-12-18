@@ -1,6 +1,7 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import resourceIcons from '../../assets/resources_hero.png';
-import BG from '../../assets/Rectangle 38.png';
+import MoreNotBetter from '../../assets/articles/More_Doesnt_Always_Mean_Better.png';
+import JustBecause from '../../assets/articles/Just_because_your_tech_can_do_something.png';
 
 const ReHeading = () => {
   return (
@@ -34,13 +35,15 @@ const ReHeading = () => {
           >
             <div 
               className="absolute inset-0 bg-cover bg-center" 
-              style={{ backgroundImage: `url(${BG})` }}
+              style={{ backgroundImage: `url(${MoreNotBetter})` }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-r from-brand-dark to-transparent md:w-[65%] w-[75%]"></div>
             <div className="relative h-full flex items-center">
-              <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
-                Innovative Solutions for Hassle-Free Claims
-              </h3>
+            <Link to="/articles/more-does-not-mean-better">
+            <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
+            More Doesn’t Always Mean Better. Making It Easier Does.
+            </h3>
+            </Link>
             </div>
           </div>
 
@@ -56,13 +59,14 @@ const ReHeading = () => {
           >
             <div 
               className="absolute inset-0 bg-cover bg-center" 
-              style={{ backgroundImage: `url(${BG})` }}
+              style={{ backgroundImage: `url(${JustBecause})` }}
             ></div>
             <div className="absolute inset-0 bg-gradient-to-r from-brand-dark to-transparent md:w-[65%] w-[75%]"></div>
             <div className="relative h-full flex items-center">
-              <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
-                Efficient Processes to Enhance Your Workflow
-              </h3>
+            <Link to="/articles/just-because-your-tech-can-do-something">
+            <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
+            &quot;Just Because Your Tech Can Do Something, Doesn’t Mean It Should&quot; – Simple Solutions for Streamlining Hail Claims</h3>
+            </Link>
             </div>
           </div>
         </div>
