@@ -30,7 +30,7 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center mt-6 space-y-4 sm:space-y-0 sm:space-x-6">
             <a
-              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0fdyo8OE4MPhwQRmYl1z5e7EYHiDLzMS9mnBxQtvGwmoqTUWOAkc980djHTZNnd4GXWC-FNBmr?gv=true"
+              href="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12"
               className="py-3 px-6 rounded-[30px] bg-gradient-to-b from-[#FF711E] to-[#FF471E] text-[16px] font-bold text-[#FFFDF9] w-full sm:w-auto text-center hover:scale-105 transition-transform duration-300 shadow-lg"
               style={{
                 boxShadow: `35px 164px 47px 0px rgba(23, 23, 23, 0.00),
