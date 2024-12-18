@@ -4,16 +4,20 @@ import Kameron from '../../assets/kam.webp';
 import Justin from '../../assets/justin.webp';
 import Todd from '../../assets/todd.webp';
 import Mo from '../../assets/Mo_Daniel.png';
-import Frank from '../../assets/frank_lamar.jpeg';
+import Frank from '../../assets/frank.png';
 import Adeyemi from '../../assets/optimized/adeyemi.png';
+import Waldo from '../../assets/waldobg.png';
+import Jonathan from '../../assets/jona.png';
 
 const teamMembers = [
   { name: "Kameron Seabrook", role: "Founder & CEO", image: Kameron, linkedin: "https://www.linkedin.com/in/kameron-seabrook/" },
   { name: "Justin Fields", role: "Co-Founder & Appraiser", image: Justin, linkedin: "https://www.linkedin.com/in/justin-fields-7686b9155/" },
-  { name: "Todd Hostetler", role: "Head of UX & UI", image: Todd, linkedin: "https://www.linkedin.com/in/toddhostetler/" },
-  { name: "Mo Daniel", role: "Jr Software Developer", image: Mo, linkedin: "https://www.linkedin.com/in/modupe-daniel/" },
   { name: "Frank Lamar", role: "Head of Engineering", image: Frank, linkedin: "https://www.linkedin.com/in/frankielamar/" },
-  { name: "Adeyemi Taiwo", role: "Jr Software Engineer", image: Adeyemi, linkedin: "https://www.linkedin.com/in/adeyemi-taiwo-5892082b0/" },
+  { name: "Todd Hostetler", role: "Head of UX & UI", image: Todd, linkedin: "https://www.linkedin.com/in/toddhostetler/" },
+  { name: "Jonathan McCottry", role: "Sr. Software Engineer", image: Jonathan, linkedin: "https://www.linkedin.com/in/jemccottry/" },
+  { name: "Waldo Rabie", role: "Sr. Software Engineer", image: Waldo, linkedin: "https://www.linkedin.com/in/waldo-rabie-3b86b5136/" },
+  { name: "Mo Daniel", role: "Jr. Software Developer", image: Mo, linkedin: "https://www.linkedin.com/in/modupe-daniel/" },
+  { name: "Adeyemi Taiwo", role: "Jr. Software Engineer", image: Adeyemi, linkedin: "https://www.linkedin.com/in/adeyemi-taiwo-5892082b0/" },
 ];
 
 const TeamMemberCard = ({ name, role, image, linkedin }) => (
