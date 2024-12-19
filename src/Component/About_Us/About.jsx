@@ -4,7 +4,6 @@ import { motion, useInView } from 'framer-motion';
 import PeopleSay from '../GeneralComponent/PeopleSay';
 // import HaveCar from '../GeneralComponent/HaveCar';
 import GetInTouch from '../GeneralComponent/GetInTouch';
-import WhoWeAre from './WhoWeAre';
 import HowWeStarted from './HowWeStarted';
 import DreamTeam from './DreamTeam';
 import SomeReading from '../GeneralComponent/SomeReading';

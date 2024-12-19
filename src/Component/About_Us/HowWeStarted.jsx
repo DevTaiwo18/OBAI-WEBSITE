@@ -1,5 +1,4 @@
 import imagebanner from '../../assets/image-banner.png'; // Ensure this is the correct path to the image
-
 const HowWeStarted = () => {
   return (
     <div className="py-10 md:py-16 px-4 md:px-20">
@@ -20,11 +19,15 @@ const HowWeStarted = () => {
         <div className="how-we-started md:w-1/2 mb-4 md:mb-0">
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#171717] mb-4">How we started</h1> {/* Updated to brand black */}
           <p className="text-[#606060]">
-            OBAI began as an open garage concept during the Flyer Pitch Competition, founded by Kameron Seabrook.
-            Initially focused on automotive care, the company evolved, adapting to market needs.
+          Obai’s journey began a decade ago as a simple idea to bring innovation to outdated industries. 
+          Kameron Seabrook, a career entrepreneur, started pitching at competitions and learning the ins and outs of operating a business. 
+
             <br /><br />
-            Today, OBAI stands at the forefront of technological innovation, specializing in streamlining the insurance 
-            claims process, making it faster and more efficient for everyone.
+            Together, they began laying the groundwork for Obai. Justin leveraged his ability to connect with people and gained early customers, while Kameron focused on developing the technology and refining the business model. 
+            The journey wasn’t without challenges—it required multiple pivots and relentless determination.
+
+            <br /><br />
+            Their breakthrough moment came in Denver, Colorado, after a major hailstorm. Within a few days, Obai processed hundreds of insurance claims, proving the potential of their innovative platform. From there, the company’s trajectory was set, paving the way for a new era in insurance claims processing. The rest is history.
           </p>
         </div>
         
@@ -39,7 +42,6 @@ const HowWeStarted = () => {
           />
         </div>
       </div>
-
     </div>
   );
 };
