@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import PropTypes from 'prop-types'; // Import PropTypes
-import Kameron from '../../assets/kam.webp';
-import Justin from '../../assets/justin.webp';
+import PropTypes from 'prop-types';
+import Kameron from '../../assets/Kameron_bg2.jpg';
+import Justin from '../../assets/Justin_bg.jpg';
 import Todd from '../../assets/todd.webp';
 import Mo from '../../assets/Mo_Daniel.png';
 import Frank from '../../assets/FrankLamarBG.jpg';
@@ -21,43 +21,42 @@ const teamMembers = [
   { name: "Adeyemi Taiwo", role: "Jr. Software Engineer", image: Adeyemi, linkedin: "https://www.linkedin.com/in/adeyemi-taiwo-5892082b0/" },
 ];
 
-
 const TeamMemberCard = ({ name, role, image, linkedin }) => (
   <motion.div
-    className="bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg-rounded overflow-hidden shadow-custom hover:shadow-lg transition-shadow duration-300"
+    className="relative w-full bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg overflow-hidden shadow-custom hover:shadow-lg transition-shadow duration-300"
     whileHover={{ y: -5 }}
     transition={{ type: "spring", stiffness: 300 }}
   >
-    {/* Image */}
-    <div>
+    {/* Image Container */}
+    <div className="w-full aspect-[4/3]">
       <img
         src={image}
         alt={name}
-        className="w-full h-64 object-cover object-center"
+        className="w-full h-full object-cover object-center"
       />
     </div>
 
-    {/* White Section: Name, Title, LinkedIn */}
-    <div className="flex flex-col items-start p-6 bg-brand-white">
-      <div className="text-left mb-4">
-        <h4 className="text-lg font-bold text-brand-dark mb-1">{name}</h4>
+    {/* Content Section */}
+    <div className="flex flex-col items-start p-4 sm:p-6 bg-brand-white">
+      <div className="text-left w-full mb-3">
+        <h4 className="text-base sm:text-lg font-bold text-brand-dark mb-1">{name}</h4>
         <p className="text-sm text-brand-dark">{role}</p>
       </div>
-      <hr width="90%" size="1"/> 
+      <div className="w-full border-t border-gray-200 my-2"></div>
       <div className="pt-2">
-      <a
-        href={linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-      >
-         <img src={LinkedIn} alt="Logo" width={30}/>
-      </a>
+        <a
+          href={linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${name}'s LinkedIn Profile`}
+          className="inline-block"
+        >
+          <img src={LinkedIn} alt="LinkedIn" className="w-6 sm:w-8 h-auto"/>
+        </a>
       </div>
     </div>
   </motion.div>
 );
-
 
 TeamMemberCard.propTypes = {
   name: PropTypes.string.isRequired,
@@ -68,10 +67,10 @@ TeamMemberCard.propTypes = {
 
 const DreamTeam = () => {
   return (
-    <section className="py-4 m-0 px-4 md:px-8 lg:px-16 bg-purple-50">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-purple-50">
+      <div className="max-w-7xl mx-auto">
         <motion.h1 
-          className="text-2xl md:text-4xl font-extrabold text-blue-900 text-center mb-12 leading-tight"
+          className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-blue-900 text-center mb-8 sm:mb-12 leading-tight px-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -79,7 +78,7 @@ const DreamTeam = () => {
           The Dream Team Behind the Tech
         </motion.h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 px-4">
           {teamMembers.map((member, index) => (
             <TeamMemberCard key={index} {...member} />
           ))}
