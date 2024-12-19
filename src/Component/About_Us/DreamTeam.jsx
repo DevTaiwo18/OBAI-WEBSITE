@@ -33,6 +33,7 @@ const TeamMemberCard = ({ name, role, image, linkedin }) => (
         src={image}
         alt={name}
         className="w-full h-full object-cover object-center"
+        loading="lazy" // Lazy loading added
       />
     </div>
 
@@ -68,7 +69,7 @@ TeamMemberCard.propTypes = {
 const DreamTeam = () => {
   return (
     <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-purple-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto overflow-visible">
         <motion.h1 
           className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-blue-900 text-center mb-8 sm:mb-12 leading-tight px-4"
           initial={{ opacity: 0, y: -20 }}
