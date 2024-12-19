@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Kameron from '../../assets/Kameron_bg2.jpg';
@@ -38,7 +38,8 @@ const TeamMemberCard = ({ name, role, image, linkedin, delay }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: delay * 0.1 }}
-      className="relative w-full bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg overflow-hidden shadow-custom hover:shadow-lg transition-shadow duration-300"
+      className="relative w-full bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg overflow-hidden shadow-custom transition-shadow duration-300 hover:scale-105 hover:shadow-lg"
+      whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
     >
       {/* Image Container */}
       <div className="w-full aspect-[4/3]">
@@ -46,6 +47,7 @@ const TeamMemberCard = ({ name, role, image, linkedin, delay }) => {
           src={image}
           alt={name}
           className="w-full h-full object-cover object-center"
+          loading="lazy"
           onError={(e) => {
             e.target.onerror = null;
             e.target.style.display = 'none';
@@ -88,7 +90,6 @@ const DreamTeam = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Ensure component is mounted
     setMounted(true);
     
     // Force a re-render after a brief delay
