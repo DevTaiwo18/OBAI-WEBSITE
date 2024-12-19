@@ -12,15 +12,16 @@ const testimonials = [
   },
   {
     icon: <FaBullseye className="text-[#FF5F1E] text-3xl" />,
-    text: "OBAI's innovative approach to hail claims has been a game-changer. Working with their thorough and systematic damage program was incredibly rewarding. Their user-friendly platform and efficient process are impressive.",
-    name: 'Jordan Roe',
-    role: 'Entrepreneur Center',
-    lastTitle: 'Director, Venture Development' 
+    text: "Working at OBAI as a Junior Developer has been an incredible journey. It's inspiring to be part of a company that prioritizes innovation and user-centered solutions. The team fosters growth and collaboration, which motivates me to continuously improve my skills and contribute to impactful projects.",
+    name: 'Adeyemi Taiwo',
+    role: 'Junior Developer',
+    lastTitle: 'OBAI Technologies'
   },
+  
   {
     icon: <FaTools className="text-[#FF5F1E] text-3xl" />,
     text: "Working closely with the OBAI team, I've witnessed their incredible progress in streamlining hail damage claims. The app is user-friendly and offers real-time updates, making the process seamless. It's been rewarding to provide feedback and see their vision succeed. Truly impressive work!",
-    name: 'Treyven Bruch',
+    name: 'Trevon Bruch',
     role: 'Safewave, CEO & Founder',
     lastTitle: 'CEO & Founder' 
   }

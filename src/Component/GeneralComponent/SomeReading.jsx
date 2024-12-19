@@ -60,7 +60,7 @@ const SomeReading = () => {
 
             {/* Title */}
             <div className="relative h-full flex items-center">
-              <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
+              <h3 className="text-white text-sm md:text-lg font-bold leading-tight p-6 w-1/2">
                 {article.title}
               </h3>
             </div>

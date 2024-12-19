@@ -8,6 +8,7 @@ import PeopleSay from '../GeneralComponent/PeopleSay';
 import HaveCar from '../GeneralComponent/HaveCar';
 import GetInTouch from '../GeneralComponent/GetInTouch';
 import SomeReading from '../GeneralComponent/SomeReading';
+import Easy from "../HowItsWorkFolder/Easy"
 
 const AnimatedSection = ({ children }) => {
   const ref = React.useRef(null);
@@ -35,6 +36,10 @@ function Home() {
       
       <AnimatedSection>
         <HeroSection />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <Easy />
       </AnimatedSection>
 
       <AnimatedSection>

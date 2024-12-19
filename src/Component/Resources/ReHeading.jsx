@@ -40,7 +40,7 @@ const ReHeading = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-brand-dark to-transparent md:w-[65%] w-[75%]"></div>
             <div className="relative h-full flex items-center">
             <Link to="/articles/more-does-not-mean-better">
-            <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
+            <h3 className="text-white text-sm md:text-lg font-bold leading-tight p-6 w-1/2">
             More Doesn’t Always Mean Better. Making It Easier Does.
             </h3>
             </Link>
@@ -64,7 +64,7 @@ const ReHeading = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-brand-dark to-transparent md:w-[65%] w-[75%]"></div>
             <div className="relative h-full flex items-center">
             <Link to="/articles/just-because-your-tech-can-do-something">
-            <h3 className="text-white text-lg font-bold leading-tight p-6 w-1/2">
+            <h3 className="text-white text-sm md:text-lg font-bold leading-tight p-6 w-1/2">
             &quot;Just Because Your Tech Can Do Something, Doesn’t Mean It Should&quot; – Simple Solutions for Streamlining Hail Claims</h3>
             </Link>
             </div>

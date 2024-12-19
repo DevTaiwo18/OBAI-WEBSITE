@@ -34,7 +34,7 @@ const HeroSection = () => {
               href="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12"
               className="py-3 px-6 rounded-[30px] bg-gradient-to-b from-[#FF711E] to-[#FF471E] text-[16px] font-bold text-[#FFFDF9] w-full sm:w-auto text-center hover:scale-105 transition-transform duration-300 shadow-lg"
             >
-              Get Started
+              Book Call
             </a>
 
             {/* Play button - Redirect to /how-we-started */}
