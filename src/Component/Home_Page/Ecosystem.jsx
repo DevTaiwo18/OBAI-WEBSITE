@@ -54,13 +54,13 @@ function Ecosystem() {
         </div>
 
         {/* Animated rows */}
-        <div className="relative flex gap-4 w-full overflow-hidden">
+        <div className="relative flex gap-8 w-full overflow-hidden h-80">
           {/* Left row (Top to Bottom) */}
-          <div className="flex flex-col gap-4">
-            {logosLeft.slice(0, 3).map((logo, index) => (
+          <div className="flex flex-col gap-6 animate-scroll-down infinite">
+            {[...logosLeft,...logosLeft].map((logo, index) => (
               <div
-                key={`left-${index}`}
-                className="bg-white rounded-[20px] shadow-lg p-4 flex items-center justify-center w-40 h-28 sm:w-60 sm:h-28"
+                key={index}
+                className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center w-40 h-30 sm:w-60 sm:h-28"
               >
                 <img
                   src={logo.src}
@@ -72,11 +72,11 @@ function Ecosystem() {
           </div>
 
           {/* Right row (Bottom to Top) */}
-          <div className="flex flex-col gap-4">
-            {logosRight.slice(0, 3).map((logo, index) => (
+          <div className="flex flex-col gap-8 animate-scroll-up">
+            {[...logosRight,...logosRight].map((logo, index) => (
               <div
-                key={`right-${index}`}
-                className="bg-white rounded-[20px] shadow-lg p-4 flex items-center justify-center w-40 h-28 sm:w-60 sm:h-28"
+                key={index}
+                className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center w-40 h-30 sm:w-60 sm:h-28"
               >
                 <img
                   src={logo.src}
