@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Kameron from '../../assets/Kameron_bg2.jpg';
-import Justin from '../../assets/Justin_bg.jpg';
+import Justin from '../../assets/just.png';
 import Todd from '../../assets/todd.webp';
 import Mo from '../../assets/Mo_Daniel.png';
 import Frank from '../../assets/FrankLamarBG.jpg';
@@ -12,7 +12,7 @@ import LinkedIn from '../../assets/LinkedIn.svg';
 
 const teamMembers = [
   { name: "Kameron Seabrook", role: "Founder & CEO", image: Kameron, linkedin: "https://www.linkedin.com/in/kameron-seabrook/" },
-  { name: "Justin Fields", role: "Co-Founder & Appraiser", image: Justin, linkedin: "https://www.linkedin.com/in/justin-fields-7686b9155/" },
+  { name: "Justin Fields", role: "Founder & Appraiser", image: Justin, linkedin: "https://www.linkedin.com/in/justin-fields-7686b9155/" },
   { name: "Frank Lamar", role: "Head of Engineering", image: Frank, linkedin: "https://www.linkedin.com/in/frankielamar/" },
   { name: "Todd Hostetler", role: "Head of UX & UI", image: Todd, linkedin: "https://www.linkedin.com/in/toddhostetler/" },
   { name: "Jonathan McCottry", role: "Sr. Software Engineer", image: Jonathan, linkedin: "https://www.linkedin.com/in/jemccottry/" },
