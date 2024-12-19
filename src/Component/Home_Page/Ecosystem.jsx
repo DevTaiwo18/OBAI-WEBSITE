@@ -20,7 +20,6 @@ const logosRight = [
   },
   { src: eco2, alt: "IAS", exLink: "https://iasclaimsgroup.com/" },
 ];
-
 function Ecosystem() {
   return (
     <div className="bg-[#171717] py-8 px-4 md:px-8 lg:px-16 overflow-hidden">
@@ -33,41 +32,79 @@ function Ecosystem() {
         </div>
 
         {/* Animated rows */}
-        <div className="relative flex gap-8 w-full overflow-hidden h-80">
-          {/* Left row (Top to Bottom) */}
-          <div className="flex flex-col gap-6 animate-scroll-down infinite">
-            {[...logosLeft, ...logosLeft].map((logo, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center w-40 h-30 sm:w-60 sm:h-28"
-              >
-                <a href={logo.exLink} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </a>
-              </div>
-            ))}
+        <div className="relative flex gap-8 w-full">
+          {/* Left row container */}
+          <div className="relative flex-shrink-0 w-40 sm:w-60 overflow-hidden h-80">
+            {/* Scrolling content */}
+            <div className="absolute top-0 flex flex-col gap-6 animate-scroll-down">
+              {/* First set */}
+              {logosLeft.map((logo, index) => (
+                <div
+                  key={`left-1-${index}`}
+                  className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center h-30 sm:h-28"
+                >
+                  <a href={logo.exLink} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </a>
+                </div>
+              ))}
+              {/* Second set */}
+              {logosLeft.map((logo, index) => (
+                <div
+                  key={`left-2-${index}`}
+                  className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center h-30 sm:h-28"
+                >
+                  <a href={logo.exLink} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Right row (Bottom to Top) */}
-          <div className="flex flex-col gap-8 animate-scroll-up">
-            {[...logosRight, ...logosRight].map((logo, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center w-40 h-30 sm:w-60 sm:h-28"
-              >
-                <a href={logo.exLink} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </a>
-              </div>
-            ))}
+          {/* Right row container */}
+          <div className="relative flex-shrink-0 w-40 sm:w-60 overflow-hidden h-80">
+            {/* Scrolling content */}
+            <div className="absolute top-0 flex flex-col gap-6 animate-scroll-up">
+              {/* First set */}
+              {logosRight.map((logo, index) => (
+                <div
+                  key={`right-1-${index}`}
+                  className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center h-30 sm:h-28"
+                >
+                  <a href={logo.exLink} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </a>
+                </div>
+              ))}
+              {/* Second set */}
+              {logosRight.map((logo, index) => (
+                <div
+                  key={`right-2-${index}`}
+                  className="bg-white rounded-[30px] shadow-lg p-6 flex items-center justify-center h-30 sm:h-28"
+                >
+                  <a href={logo.exLink} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
