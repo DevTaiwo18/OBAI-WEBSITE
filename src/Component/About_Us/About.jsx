@@ -39,9 +39,9 @@ function About() {
         <WhoWeAre />
       </AnimatedSection> */}
 
-      <AnimatedSection>
+      <div>
         <DreamTeam />
-      </AnimatedSection>
+      </div>
 
       <AnimatedSection>
         <PeopleSay />

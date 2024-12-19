@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Kameron from '../../assets/Kameron_bg2.jpg';
@@ -21,22 +22,32 @@ const teamMembers = [
   { name: "Adeyemi Taiwo", role: "Jr. Software Engineer", image: Adeyemi, linkedin: "https://www.linkedin.com/in/adeyemi-taiwo-5892082b0/" },
 ];
 
-const TeamMemberCard = ({ name, role, image, linkedin }) => {
+const TeamMemberCard = ({ name, role, image, linkedin, delay }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: delay * 0.1 }}
       className="relative w-full bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg overflow-hidden shadow-custom hover:shadow-lg transition-shadow duration-300"
-      whileHover={{ y: -5 }}
-      transition={{ type: "spring", stiffness: 300 }}
     >
       {/* Image Container */}
       <div className="w-full aspect-[4/3]">
         <img
           src={image}
           alt={name}
-          loading="lazy"
           className="w-full h-full object-cover object-center"
           onError={(e) => {
-            e.target.onerror = null; // Prevent infinite loop
+            e.target.onerror = null;
             e.target.style.display = 'none';
           }}
         />
@@ -57,11 +68,7 @@ const TeamMemberCard = ({ name, role, image, linkedin }) => {
             aria-label={`${name}'s LinkedIn Profile`}
             className="inline-block"
           >
-            <img 
-              src={LinkedIn} 
-              alt="LinkedIn" 
-              className="w-6 sm:w-8 h-auto"
-            />
+            <img src={LinkedIn} alt="LinkedIn" className="w-6 sm:w-8 h-auto"/>
           </a>
         </div>
       </div>
@@ -74,14 +81,33 @@ TeamMemberCard.propTypes = {
   role: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   linkedin: PropTypes.string.isRequired,
+  delay: PropTypes.number
 };
 
 const DreamTeam = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // Ensure component is mounted
+    setMounted(true);
+    
+    // Force a re-render after a brief delay
+    const timer = setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!mounted) {
+    return <div className="min-h-screen bg-purple-50" />;
+  }
+
   return (
-    <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-purple-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-purple-50 w-full min-h-screen">
+      <div className="container mx-auto px-4 py-16">
         <motion.h1 
-          className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-blue-900 text-center mb-8 sm:mb-12 leading-tight px-4"
+          className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-blue-900 text-center mb-12 leading-tight"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -89,9 +115,13 @@ const DreamTeam = () => {
           The Dream Team Behind the Tech
         </motion.h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 px-4">
-          {teamMembers.map((member) => (
-            <TeamMemberCard key={member.name} {...member} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
+          {teamMembers.map((member, index) => (
+            <TeamMemberCard 
+              key={member.name} 
+              {...member} 
+              delay={index}
+            />
           ))}
         </div>
       </div>
