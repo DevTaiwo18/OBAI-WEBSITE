@@ -22,17 +22,17 @@ module.exports = {
       },
       keyframes: {
         scrollDown: {
-          '0%': { transform: 'translateY(-100%)' },
-          '100%': { transform: 'translateY(100%)' },
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
         },
         scrollUp: {
-          '0%': { transform: 'translateY(100%)' },
-          '100%': { transform: 'translateY(-100%)' },
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-50%)" },
         },
       },
       animation: {
-        'scroll-down': 'scrollDown 10s linear infinite',
-        'scroll-up': 'scrollUp 10s linear infinite',
+        'scroll-down': 'scrollDown 5s linear infinite',
+        'scroll-up': 'scrollUp 5s linear infinite',
       },
     },
   },
