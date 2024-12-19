@@ -21,42 +21,53 @@ const teamMembers = [
   { name: "Adeyemi Taiwo", role: "Jr. Software Engineer", image: Adeyemi, linkedin: "https://www.linkedin.com/in/adeyemi-taiwo-5892082b0/" },
 ];
 
-const TeamMemberCard = ({ name, role, image, linkedin }) => (
-  <motion.div
-    className="relative w-full bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg overflow-hidden shadow-custom hover:shadow-lg transition-shadow duration-300"
-    whileHover={{ y: -5 }}
-    transition={{ type: "spring", stiffness: 300 }}
-  >
-    {/* Image Container */}
-    <div className="w-full aspect-[4/3]">
-      <img
-        src={image}
-        alt={name}
-        className="w-full h-full object-cover object-center"
-      />
-    </div>
+const TeamMemberCard = ({ name, role, image, linkedin }) => {
+  return (
+    <motion.div
+      className="relative w-full bg-gradient-to-b from-brand-tertiary to-brand-primary rounded-lg overflow-hidden shadow-custom hover:shadow-lg transition-shadow duration-300"
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      {/* Image Container */}
+      <div className="w-full aspect-[4/3]">
+        <img
+          src={image}
+          alt={name}
+          loading="lazy"
+          className="w-full h-full object-cover object-center"
+          onError={(e) => {
+            e.target.onerror = null; // Prevent infinite loop
+            e.target.style.display = 'none';
+          }}
+        />
+      </div>
 
-    {/* Content Section */}
-    <div className="flex flex-col items-start p-4 sm:p-6 bg-brand-white">
-      <div className="text-left w-full mb-3">
-        <h4 className="text-base sm:text-lg font-bold text-brand-dark mb-1">{name}</h4>
-        <p className="text-sm text-brand-dark">{role}</p>
+      {/* Content Section */}
+      <div className="flex flex-col items-start p-4 sm:p-6 bg-brand-white">
+        <div className="text-left w-full mb-3">
+          <h4 className="text-base sm:text-lg font-bold text-brand-dark mb-1">{name}</h4>
+          <p className="text-sm text-brand-dark">{role}</p>
+        </div>
+        <div className="w-full border-t border-gray-200 my-2"></div>
+        <div className="pt-2">
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${name}'s LinkedIn Profile`}
+            className="inline-block"
+          >
+            <img 
+              src={LinkedIn} 
+              alt="LinkedIn" 
+              className="w-6 sm:w-8 h-auto"
+            />
+          </a>
+        </div>
       </div>
-      <div className="w-full border-t border-gray-200 my-2"></div>
-      <div className="pt-2">
-        <a
-          href={linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${name}'s LinkedIn Profile`}
-          className="inline-block"
-        >
-          <img src={LinkedIn} alt="LinkedIn" className="w-6 sm:w-8 h-auto"/>
-        </a>
-      </div>
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+};
 
 TeamMemberCard.propTypes = {
   name: PropTypes.string.isRequired,
@@ -79,8 +90,8 @@ const DreamTeam = () => {
         </motion.h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 px-4">
-          {teamMembers.map((member, index) => (
-            <TeamMemberCard key={index} {...member} />
+          {teamMembers.map((member) => (
+            <TeamMemberCard key={member.name} {...member} />
           ))}
         </div>
       </div>
