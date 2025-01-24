@@ -1,8 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, useInView } from 'framer-motion';
-import HaveCar from '../GeneralComponent/HaveCar';
-import SomeReading from '../GeneralComponent/SomeReading';
 import Contactus from './Contactus';
 import ContactInfo from './ContactInfo';
 
@@ -29,7 +27,7 @@ function Contact() {
         <title>OBAI - Contact</title>
         <meta name="description" content="Welcome to the OBAI website Contact page." />
       </Helmet>
-      
+
       <AnimatedSection>
         <Contactus />
       </AnimatedSection>
@@ -38,13 +36,6 @@ function Contact() {
         <ContactInfo />
       </AnimatedSection>
 
-      {/* <AnimatedSection>
-        <HaveCar />
-      </AnimatedSection> */}
-
-      <AnimatedSection>
-        <SomeReading />
-      </AnimatedSection>
 
     </div>
   );

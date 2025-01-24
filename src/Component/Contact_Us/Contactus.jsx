@@ -10,24 +10,12 @@ const Contactus = () => {
 
       {/* Heading */}
       <h1 className="text-center text-3xl font-extrabold text-[#171717] mb-8">Contact Us</h1>
-
-      {/* Two Calendly Embeds Side-by-Side */}
       <div className="flex flex-col md:flex-row justify-center gap-6">
         {/* Kameron's Calendly Embed */}
         <div className="w-full md:w-1/2 h-[80vh]">
           <iframe
             src="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12"
             title="Kameron's Calendly Scheduling"
-            className="w-full h-full border-0 rounded-lg"
-            allowFullScreen
-          ></iframe>
-        </div>
-
-        {/* Justin's Calendly Embed */}
-        <div className="w-full md:w-1/2 h-[80vh]">
-          <iframe
-            src="https://calendly.com/justin-obai/30min?back=1&month=2024-12"
-            title="Justin's Calendly Scheduling"
             className="w-full h-full border-0 rounded-lg"
             allowFullScreen
           ></iframe>

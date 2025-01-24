@@ -68,7 +68,6 @@ export default function Header() {
   const menuItems = [
     { name: 'About', path: '/about' },
     { name: 'How It Works', path: '/how-we-started' },
-    { name: 'Resources', path: '/resources' },
     { name: 'Contact', path: '/contact' },
     // { name: 'Login', path: '#' },
   ];

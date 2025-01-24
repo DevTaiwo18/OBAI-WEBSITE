@@ -1,12 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, useInView } from 'framer-motion';
-import PeopleSay from '../GeneralComponent/PeopleSay';
-// import HaveCar from '../GeneralComponent/HaveCar';
 import GetInTouch from '../GeneralComponent/GetInTouch';
 import HowWeStarted from './HowWeStarted';
-import DreamTeam from './DreamTeam';
-import SomeReading from '../GeneralComponent/SomeReading';
+
 const AnimatedSection = ({ children }) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -33,26 +30,6 @@ function About() {
 
       <AnimatedSection>
         <HowWeStarted />
-      </AnimatedSection>
-      
-      {/* <AnimatedSection>
-        <WhoWeAre />
-      </AnimatedSection> */}
-
-      <div>
-        <DreamTeam />
-      </div>
-
-      <AnimatedSection>
-        <PeopleSay />
-      </AnimatedSection>
-
-      {/* <AnimatedSection>
-        <HaveCar />
-      </AnimatedSection> */}
-
-      <AnimatedSection>
-        <SomeReading />
       </AnimatedSection>
 
       <AnimatedSection>

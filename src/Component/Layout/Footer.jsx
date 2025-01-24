@@ -6,10 +6,10 @@ import linkedln from '../../assets/LinkedIn.png';
 function Footer() {
   return (
     <footer className="bg-[#171717] text-[#FFFD9F] py-8 lg:py-14 px-4 md:px-6 lg:px-12">
-      
+
       {/* First Line: Logo and Navigation Links */}
       <div className="flex lg:px-1 xl:px-10 flex-col lg:flex-row justify-center items-center w-full lg:space-x-8 flex-wrap">
-        
+
         {/* Logo */}
         <div className="flex-shrink-0 flex justify-center mb-4 lg:mb-0">
           <Link to="/"> {/* Use Link to navigate to the homepage */}
@@ -23,7 +23,6 @@ function Footer() {
             {/* Links will wrap on small screens */}
             <li><Link to="/about" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">About</Link></li>
             <li><Link to="/how-we-started" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">How It Works</Link></li>
-            <li><Link to="/resources" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Resources</Link></li>
             <li><Link to="/contact" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Contact</Link></li>
             <li><Link to="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Demo</Link></li>
           </ul>

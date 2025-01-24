@@ -4,10 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import HeroSection from './HeroSection';
 import KeyFeatures from './KeyFeatures';
 import Ecosystem from './Ecosystem';
-import PeopleSay from '../GeneralComponent/PeopleSay';
-import HaveCar from '../GeneralComponent/HaveCar';
 import GetInTouch from '../GeneralComponent/GetInTouch';
-import SomeReading from '../GeneralComponent/SomeReading';
 import Easy from "../HowItsWorkFolder/Easy"
 
 const AnimatedSection = ({ children }) => {
@@ -31,9 +28,8 @@ function Home() {
     <div className="pt-19 md:pt-23"> {/* Added padding-top */}
       <Helmet>
         <title>OBAI - Home</title>
-        <meta name="description" content="Welcome to the OBAI website home page." />
+        <meta name="description" content="Welcome to OBAI." />
       </Helmet>
-      
       <AnimatedSection>
         <HeroSection />
       </AnimatedSection>
@@ -51,21 +47,8 @@ function Home() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <PeopleSay />
-      </AnimatedSection>
-
-      {/* <AnimatedSection>
-        <HaveCar />
-      </AnimatedSection> */}
-
-      <AnimatedSection>
-        <SomeReading />
-      </AnimatedSection>
-
-      <AnimatedSection>
         <GetInTouch />
       </AnimatedSection>
-
     </div>
   );
 }
