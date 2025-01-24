@@ -6,23 +6,23 @@ import repairBotImage from '../../assets/RepairBot.png';
 
 const features = [
   {
-    title: 'Faster Claim Turnaround',
-    description: 'Reduce claim submission times to as little as 6 minutes.',
-    image: fiveMinutesImage
+    title: 'AI Analysis',
+    description: 'Advanced analysis to precisely measure damage. ',
+    image: repairBotImage
   },
   {
-    title: 'AI-Powered Accuracy',
-    description: 'Achieve over 90% accuracy with AI-driven damage assessments.',
+    title: 'Open API into your existing systems',
+    description: 'No hassle legacy system integrations.',
     image: accuracyImage
   },
   {
-    title: 'AR-Guided Workflows',
-    description: 'Capture high-quality images and analyze damage with AR tools.',
-    image: arRepairImage
+    title: 'Possible Fraud Detection',
+    description: 'Flagging suspictious and obvious mistakes in each claim',
+    image: accuracyImage
   },
   {
-    title: 'Seamless Customer Support',
-    description: 'Answer customer questions with RepairBot automation.',
+    title: 'Customizable Workflow',
+    description: 'Tailored dashboards to fix organizational needs. ',
     image: repairBotImage
   }
 ];
