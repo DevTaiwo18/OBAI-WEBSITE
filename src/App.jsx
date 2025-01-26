@@ -1,6 +1,5 @@
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { ClipLoader } from 'react-spinners'; // Import the spinner
 import Header from './Component/Layout/Header';
 import Footer from './Component/Layout/Footer';
 import Home from './Component/Home_Page/Home';
@@ -29,7 +28,7 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/how-we-started" element={<Howitswork />} />
+            <Route path="/how-it-works" element={<Howitswork />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
@@ -39,11 +38,6 @@ function App() {
     </div>
   );
 }
-
-//<Route path="/" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Home /></Suspense>} />
-//<Route path="/about" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><About /></Suspense>} />
-//<Route path="/how-we-started" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Howitswork /></Suspense>} />
-//<Route path="/contact" element={<Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#FF5F1E" size={50} /></div>}><Contact /></Suspense>} />
 
 
 export default App;

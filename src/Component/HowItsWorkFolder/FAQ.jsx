@@ -13,27 +13,47 @@ const FAQ = () => {
         {
             question: 'How does OBAI streamline the hail insurance claims process?',
             answer:
-                'OBAI automates the claim process, making it faster and easier for both adjusters and customers by utilizing AI-powered tools and a seamless user interface.',
-        },
-        {
-            question: 'What is RepairBot and how does it help in the claims process?',
-            answer:
-                'RepairBot is an AI-powered assistant that guides customers through the process of submitting photos, videos, and additional information for their hail damage claim. It ensures all necessary details are provided accurately.',
+                'OBAI automates the hail insurance claims process through its advanced AI-powered tools and intuitive user interface. It electrifies tasks such as damage capture, assessment, and documentation, significantly reducing processing time. By integrating seamlessly with repair shops and legacy systems, OBAI ensures faster resolutions while maintaining accuracy and customer satisfaction.',
         },
         {
             question: 'Can customers track the progress of their claim through OBAI?',
             answer:
-                'Yes, OBAI provides a real-time tracking system that allows customers to view the progress of their claim from submission to approval.',
+                'Yes, OBAI provides a comprehensive real-time tracking system for both customers and adjusters. The system offers detailed progress updates, timelines, and interactive features that allow users to monitor every stage of the claim process, from submission to resolution.',
         },
         {
-            question: 'What types of information do adjusters need to input when creating a claim?',
+            question: 'What types of information do adjusters need to input when creating a damage capture?',
             answer:
                 'Adjusters need to input details such as incident reports, customer information, and recovery insurance information into the app’s admin interface.',
         },
         {
             question: 'How accurate are the damage estimates provided by OBAI?',
             answer:
-                'OBAI uses advanced algorithms to provide highly accurate damage estimates based on the uploaded photos and information provided by the customer.',
+                'OBAI delivers highly accurate damage scope through its advanced dent detection algorithms that analyze vehicle images and data. The system cross-references historical repair costs, manufacturer specifications, and industry standards to ensure precision. This approach minimizes the margin of error and saves time compared to manual methods. ',
+        },
+        {
+            question: 'How does OBAI ensure secure and compliant handling of customer and insurance data?',
+            answer:
+                'OBAI prioritizes data security by leveraging encryption technologies and compliance with industry standards such as GDPR and HIPAA. The platform includes role-based access controls, and regular security audits to safeguard sensitive information, ensuring peace of mind for both customers and partners. ',
+        },
+        {
+            question: 'Can OBAI support integration with third-party systems and APIs?',
+            answer:
+                'Yes, OBAI offers robust OpenAPI integration capabilities, allowing seamless connectivity with legacy systems, third-party systems like repair shop management software and external data providers. This ensures a unified workflow and boosts operational efficiency.',
+        },
+        {
+            question: 'What reporting features does OBAI provide for adjusters and partners?',
+            answer:
+                'OBAI provides easy-to-use reporting tools with dashboards, real-time analytics, and exportable reports. Adjusters can generate detailed insights into claim metrics, and team efficiency, supporting data-driven decisions and improving operational performance.',
+        },
+        {
+            question: 'Is OBAI suitable for both personal and commercial hail insurance claims?',
+            answer:
+                'Yes, OBAI is designed to handle a wide range of hail insurance claims, including those for personal vehicles and commercial fleets. The platform’s scalable infrastructure and customizable workflows cater to the unique needs of different policyholders, ensuring efficient processing across all claim types.',
+        },
+        {
+            question: 'Does OBAI support capture beyond hail damage?',
+            answer:
+                'Yes, our system was designed with flexibility in mind. While it excels at processing hail damage claims, it also supports a variety of other claim types through highly customizable workflows. Whether you need to capture work order information for quotations, manage repair orders, or handle any specific type of claim, our application is adaptable to meet your unique requirements.',
         },
     ];
 

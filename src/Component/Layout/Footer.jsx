@@ -22,7 +22,7 @@ function Footer() {
           <ul className="flex flex-wrap justify-center lg:justify-end gap-4 lg:space-x-8 text-center">
             {/* Links will wrap on small screens */}
             <li><Link to="/about" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">About</Link></li>
-            <li><Link to="/how-we-started" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">How It Works</Link></li>
+            <li><Link to="/how-it-works" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">How It Works</Link></li>
             <li><Link to="/contact" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Contact</Link></li>
             <li><Link to="https://calendly.com/kam-obai/meet-with-me?back=1&month=2024-12" className="text-brand-white font-bold text-sm md:text-md transition-colors duration-300">Demo</Link></li>
           </ul>
@@ -46,7 +46,7 @@ function Footer() {
 
       {/* Copyright */}
       <div className="mt-4 text-center text-sm">
-        <p className='text-brand-white'>©2024 Open Bay Autos AI, Inc.</p>
+        <p className='text-brand-white'>©2025 Open Bay Autos AI, Inc.</p>
       </div>
     </footer>
   );

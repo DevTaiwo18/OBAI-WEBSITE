@@ -22,7 +22,7 @@ const HowWeStarted = () => {
             Kameron Seabrook, a career entrepreneur, started pitching at competitions and learning the ins and outs of operating a business.
 
             <br /><br />
-            Together, they began laying the groundwork for Obai. Justin leveraged his ability to connect with people and gained early customers, while Kameron focused on developing the technology and refining the business model.
+            Together, with Justin Fields, they began laying the groundwork for Obai. Justin leveraged his ability to connect with people and gained early customers, while Kameron focused on developing the technology and refining the business model.
             The journey wasn’t without challenges—it required multiple pivots and relentless determination.
 
             <br /><br />

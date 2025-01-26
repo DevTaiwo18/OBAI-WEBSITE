@@ -2,8 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, useInView } from 'framer-motion';
 import KeyFeatures from '../Home_Page/KeyFeatures';
-
-import SomeReading from '../GeneralComponent/SomeReading';
 import GetInTouch from '../GeneralComponent/GetInTouch';
 import Ourtech from './Ourtech';
 import Easy from './Easy';
@@ -47,14 +45,6 @@ function Howitswork() {
 
             <AnimatedSection>
                 <FAQ />
-            </AnimatedSection>
-
-            {/* <AnimatedSection>
-                <HaveCar />
-            </AnimatedSection> */}
-
-            <AnimatedSection>
-                <SomeReading />
             </AnimatedSection>
 
             <AnimatedSection>

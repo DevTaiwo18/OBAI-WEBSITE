@@ -19,7 +19,7 @@ const Easy = () => {
           </div>
           <h3 className="text-[#171717] font-bold text-xl mb-2 mt-8">Upload the claim</h3> {/* Updated to brand black */}
           <p className="text-[#606060]">
-            The adjuster initiates the claim by entering the incident details and recovery insurance information into the app’s admin interface.
+            The adjuster initiates the process by uploading the claim details (insurance information, incident details, policyholder and vehicle information) manually or via our file reader, along with options and customized instructions for customers.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ const Easy = () => {
           </div>
           <h3 className="text-[#171717] font-bold text-xl mb-2 mt-8">Customer collects damage</h3> {/* Updated to brand black */}
           <p className="text-[#606060]">
-            The customer reviews the claim and uploads photos/videos of their vehicle, providing additional information.
+          The customer receives a customized link that guides them through detailed, step-by-step instructions for preparing image/video evidence of vehicle damage. The process also includes repair shop selection, along with additional details and notes tailored for the adjuster.
           </p>
         </div>
 
@@ -43,9 +43,9 @@ const Easy = () => {
               3
             </div>
           </div>
-          <h3 className="text-[#171717] font-bold text-xl mb-2 mt-8">Precision scope returned</h3> {/* Updated to brand black */}
+          <h3 className="text-[#171717] font-bold text-xl mb-2 mt-8">Precise scope returned</h3> {/* Updated to brand black */}
           <p className="text-[#606060]">
-            Once the customer submits the claim, it is reviewed, and an accurate damage estimate is generated.
+          All multimedia and metadata goes through our damage estimator model which assesses dent sizing and depth in various lighting conditions and capture environments. The total package is then returned to the adjuster for review.
           </p>
         </div>
       </div>
