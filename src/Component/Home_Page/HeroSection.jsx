@@ -1,6 +1,6 @@
 import React from "react";
-import mobile_frame from "../../assets/Home Hero.png";
-import Big_frame from "../../assets/Home Hero.png";
+import mobile_frame from "../../assets/Hero.png";
+import Big_frame from "../../assets/Hero.png";
 import StatRow from "./StatRow";
 import StatRowOverlay from "./StatRowOverlay";
 
@@ -23,7 +23,7 @@ const HeroSection = () => {
 
             {/* Paragraph with updated color */}
             <p className="text-[20px] md:text-[20px] leading-[24px] text-[#171717] text-left">
-            Up to 50% savings per claim, reduced cycle time from days to hours.
+              Up to 50% savings per claim, reduced cycle time from days to hours.
             </p>
           </div>
 
@@ -46,16 +46,11 @@ const HeroSection = () => {
             className="w-full h-auto z-0"
           />
           {/* StatRow Overlay */}
-          <div className="absolute top-[74%] w-full max-w-[1200px] flex justify-start">
-            <StatRowOverlay />
-          </div>
+
         </div>
       </div>
 
       {/* Stats Row for small screens */}
-      <div className="md:hidden flex justify-center mt-4 mb-3">
-        <StatRow />
-      </div>
     </div>
   );
 };

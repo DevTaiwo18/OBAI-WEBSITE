@@ -62,7 +62,7 @@ export default function KeyFeatures() {
     <section className="py-8 md:py-16 px-1 md:px-16 bg-[#F9F9FF]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-extrabold text-center text-[#171717] mb-12">Key Features</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
