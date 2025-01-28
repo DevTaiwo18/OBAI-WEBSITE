@@ -17,16 +17,16 @@ const HowWeStarted = () => {
         {/* Text Section */}
         <div className="how-we-started md:w-1/2 mb-4 md:mb-0">
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#171717] mb-4">How we started</h1> {/* Updated to brand black */}
-          <p className="text-[#606060]">
-            Obai’s journey began a decade ago as a simple idea to bring innovation to outdated industries.
-            Kameron Seabrook, a career entrepreneur, started pitching at competitions and learning the ins and outs of operating a business.
+          <p className="text-[#606060] text-sm">
+            Obai’s journey began five years ago as a simple idea to bring much-needed innovation to aging, inefficient industries. Kameron Seabrook, a career entrepreneur, spent countless hours refining his pitch at competitions and learning the complex realities of running a successful venture. Every challenge sharpened his vision and deepened his resolve.
+            Before long, Kameron teamed up with Justin Fields, whose seasoned relationship-building and customer engagement background proved indispensable. With years of personal entrepreneurial experience, Justin knew how to navigate conversations with prospective clients and showcase a product’s true value. He deftly secured Obai’s first wave of customers, drawing on his network and an innate ability to connect with people from all walks of life.
 
             <br /><br />
-            Together, with Justin Fields, they began laying the groundwork for Obai. Justin leveraged his ability to connect with people and gained early customers, while Kameron focused on developing the technology and refining the business model.
-            The journey wasn’t without challenges—it required multiple pivots and relentless determination.
+            Meanwhile, Kameron channeled his passion for technology and streamlined the platform’s capabilities, ensuring Obai could scale to meet rapidly growing demand. In these formative years, the duo weathered multiple pivots and moments of uncertainty, bolstered by unwavering determination and a shared belief in Obai’s transformative potential.
+            Their breakthrough emerged in Denver, Colorado, following a destructive hailstorm. Within days, Obai seamlessly processed hundreds of insurance claims, validating the platform’s innovative approach and demonstrating how it could reshape the industry. From that pivotal success, the team knew they were on the cusp of changing how claims were handled—ushering in a new era of efficiency and transparency.
 
             <br /><br />
-            Their breakthrough moment came in Denver, Colorado, after a major hailstorm. Within a few days, Obai processed hundreds of insurance claims, proving the potential of their innovative platform. From there, the company’s trajectory was set, paving the way for a new era in insurance claims processing. The rest is history.
+            Since then, Obai’s story has been one of exponential growth, but it all traces back to the synergy between Kameron’s entrepreneurial foresight and Justin’s proven expertise in forging genuine human connections. The rest, as they say, is history.
           </p>
         </div>
 
