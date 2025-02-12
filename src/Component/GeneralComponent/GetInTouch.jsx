@@ -28,7 +28,7 @@ const GetInTouch = () => {
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#171717] mb-4">
             Get in touch
           </h2>
-          <p className="text-[#606060] mb-4 md:mb-0">
+          <p className="text-[#606060] mb-4 md:mb-0 font-serif">
             Have more questions or want to make sure the tech is a right fit? Reach out to us and get in touch!
           </p>
         </div>

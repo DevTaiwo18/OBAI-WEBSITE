@@ -10,14 +10,11 @@ import './index.css';
 
 function App() {
   const location = useLocation();
-  // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  // Simulate loading (this could be replaced with real loading logic, like data fetching)
   useEffect(() => {
-    //setTimeout(() => setIsLoading(false), 1000); // simulate loading delay
   }, []);
 
   return (

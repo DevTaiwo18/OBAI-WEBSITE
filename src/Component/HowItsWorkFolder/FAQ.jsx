@@ -91,7 +91,7 @@ const FAQ = () => {
                             className="overflow-hidden"
                         >
                             {openIndex === index && (
-                                <motion.p className="text-[#606060] mt-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+                                <motion.p className="text-[#606060] mt-3 font-serif" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
                                     {faq.answer}
                                 </motion.p>
                             )}
